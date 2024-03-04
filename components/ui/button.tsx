@@ -19,7 +19,9 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        registerButton: "w-full bg-gradient-to-r from-[#64d5dc] to-[#e53ef7] rounded-full text-white"
+        registerButton: "w-full bg-gradient-to-r from-[#64d5dc] to-[#e53ef7] rounded-full text-white",
+        custom: "bg-gradient-to-r from-[#59BFDF] to-[#E739F5] text-white font-bold"
+
       },
       size: {
         default: "h-9 px-4 py-2",
