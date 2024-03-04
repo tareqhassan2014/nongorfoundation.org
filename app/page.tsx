@@ -1,10 +1,16 @@
+
+import LoginPage from "@/app/auth/login/page";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Link from "next/link";
+
+
 
 export default function Home() {
   return (
-    <div>
-      <Button>Complete</Button>
-    </div>
+    <main className="flex h-full py-20 flex-col justify-center items-center bg-gradient-to-r from-[#59BFDF] to-[#E739F5]">
+      <Button variant="outline">
+        <Link href="/auth/login">Sign In</Link>
+      </Button>
+    </main>
   );
 }
