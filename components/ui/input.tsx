@@ -3,7 +3,9 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 export interface InputProps
+
   extends React.InputHTMLAttributes<HTMLInputElement> {}
+
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, type, ...props }, ref) => {
@@ -23,3 +25,6 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
 Input.displayName = "Input"
 
 export { Input }
+
+
+//      "flex h-9 w-full border-b-2 border-[#afa7ad] border-input bg-transparent px-3 py-1 text-sm font-semibold  shadow-sm  file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none  disabled:cursor-not-allowed disabled:opacity-50",
