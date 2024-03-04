@@ -1,11 +1,10 @@
-"use client"
+"use client";
 import { Roboto } from "next/font/google";
 import { FaFacebookF, FaGoogle, FaTwitter } from "react-icons/fa6";
 const font = Roboto({
     subsets: ["latin"],
-    weight: ["500"]
-})
-
+    weight: ["500"],
+});
 
 export const Social = () => {
     return (
