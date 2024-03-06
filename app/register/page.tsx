@@ -1,8 +1,8 @@
 "use client"
 import { z } from 'zod';
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { FormSchema } from '@/components/Schema/FormSchema';
+import { RegisterFormSchema } from '@/components/Schema/RegisterFormSchema';
 import { zodResolver } from '@hookform/resolvers/zod';
 import {
     Form,
@@ -18,12 +18,30 @@ import { Button } from '@/components/ui/button';
 import { FaFacebook } from "react-icons/fa";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { AiFillGoogleCircle } from "react-icons/ai";
+import { IoIosMail } from "react-icons/io";
+import { IoIosLock } from "react-icons/io";
+import { FaUserTag } from "react-icons/fa";
+import { IoEyeOffSharp } from "react-icons/io5";
+import { IoEyeSharp } from "react-icons/io5";
+import Link from 'next/link';
 
 const Register = () => {
-    const form = useForm<z.infer<typeof FormSchema>>({
-        resolver: zodResolver(FormSchema),
+
+    const [showPassword, setShowPassword] = useState(false)
+    const [showConfirmPassword, setShowConfirmPassword] = useState(false)
+
+    const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword)
+    }
+
+    const toggleConfirmPasswordVisibility = () => {
+        setShowConfirmPassword(!showConfirmPassword)
+    }
+
+    const form = useForm<z.infer<typeof RegisterFormSchema>>({
+        resolver: zodResolver(RegisterFormSchema),
         defaultValues: {
-            userName: "",
+
             firstName: "",
             lastName: "",
             emailAddress: "",
@@ -31,12 +49,12 @@ const Register = () => {
             confirmPassword: "",
         }
     })
-    const onSubmit = (values: z.infer<typeof FormSchema>) => {
+    const onSubmit = (values: z.infer<typeof RegisterFormSchema>) => {
         console.log(values);
     }
     return (
-        <div className='h-screen flex justify-center items-center bg-gradient-to-r from-[#61d7dd] to-[#df39f5] '>
-            <div className='  rounded-lg py-10 px-10 bg-white'>
+        <div className='w-full h-screen flex justify-center items-center bg-gradient-to-tr from-[#61d7dd] to-[#df39f5] '>
+            <div className='w-full lg:max-w-xl mx-auto h-screen lg:max-h-[850px] lg:rounded-lg rounded-none py-10 px-10 bg-white'>
                 <h2 className='text-3xl font-bold text-center pb-14'>Sign up</h2>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -47,52 +65,61 @@ const Register = () => {
                                 <FormItem>
                                     <FormLabel className='font-bold'>Email Address</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Please enter your email address" {...field} />
+                                        <div className='text-[#afa7ad] relative'>
+                                            <IoIosMail className='absolute top-1.5 text-2xl' />
+                                            <Input className='pl-8 border-2 border-t-0 border-l-0 border-r-0 rounded-none focus-visible:ring-0' placeholder="Please enter your email address" {...field} />
+                                        </div>
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
                             )}
                         />
-                        <FormField
-                            control={form.control}
-                            name="userName"
-                            render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel className='font-bold'>User Name</FormLabel>
-                                    <FormControl>
-                                        <Input placeholder="Please enter your user name" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="password"
-                            render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel className='font-bold'>Login Password</FormLabel>
-                                    <FormControl>
-                                        <Input placeholder="Please enter your password" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <FormField
-                            control={form.control}
-                            name="confirmPassword"
-                            render={({ field }) => (
-                                <FormItem>
-                                    <FormLabel className='font-bold'>Confirm Password</FormLabel>
-                                    <FormControl>
-                                        <Input placeholder="Please confirm password" {...field} />
-                                    </FormControl>
-                                    <FormMessage />
-                                </FormItem>
-                            )}
-                        />
-                        <div className='flex gap-4'>
+
+                        <div className='flex flex-col lg:flex-row md:flex-col gap-4 '>
+                            <FormField
+                                control={form.control}
+                                name="password"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel className='font-bold'>Sign Up Password</FormLabel>
+                                        <FormControl>
+                                            <div className='text-[#afa7ad] relative'>
+                                                <IoIosLock className='absolute top-1 text-2xl' />
+                                                <Input className='pl-8 border-2 border-t-0 border-l-0 border-r-0 rounded-none focus-visible:ring-0 ' placeholder="Please enter password" type={showPassword ? 'text' : 'password'} {...field} />
+                                                <button className='absolute bottom-2 right-1' onClick={togglePasswordVisibility} >
+                                                    {
+                                                        showPassword ? <IoEyeSharp className='text-xl' /> : <IoEyeOffSharp className='text-xl' />
+                                                    }
+                                                </button>
+                                            </div>
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
+                            <FormField
+                                control={form.control}
+                                name="confirmPassword"
+                                render={({ field }) => (
+                                    <FormItem>
+                                        <FormLabel className='font-bold'>Confirm Password</FormLabel>
+                                        <FormControl>
+                                            <div className='text-[#afa7ad] relative'>
+                                                <IoIosLock className='absolute top-1 text-2xl' />
+                                                <Input className='pl-8 border-2 border-t-0 border-l-0 border-r-0 rounded-none focus-visible:ring-0' placeholder="Please confirm password" type={showConfirmPassword ? "text" : "password"} {...field} />
+                                                <button className='absolute bottom-2 right-1' onClick={toggleConfirmPasswordVisibility}>
+                                                    {
+                                                        showConfirmPassword ? <IoEyeSharp className='text-xl' /> : <IoEyeOffSharp className='text-xl' />
+                                                    }
+                                                </button>
+                                            </div>
+                                        </FormControl>
+                                        <FormMessage />
+                                    </FormItem>
+                                )}
+                            />
+                        </div>
+                        <div className='flex flex-col lg:flex-row md:flex-col gap-4 '>
                             <FormField
                                 control={form.control}
                                 name="firstName"
@@ -100,7 +127,10 @@ const Register = () => {
                                     <FormItem>
                                         <FormLabel className='font-bold'>First Name</FormLabel>
                                         <FormControl>
-                                            <Input placeholder="Please enter your first name" {...field} />
+                                            <div className='text-[#afa7ad] relative'>
+                                                <FaUserTag className='absolute top-1 text-2xl' />
+                                                <Input className='pl-8 border-2 border-t-0 border-l-0 border-r-0 rounded-none focus-visible:ring-0' placeholder="Please inter your first name" {...field} />
+                                            </div>
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
@@ -113,14 +143,17 @@ const Register = () => {
                                     <FormItem>
                                         <FormLabel className='font-bold'>Last Name</FormLabel>
                                         <FormControl>
-                                            <Input placeholder="Please enter your last name" {...field} />
+                                            <div className='text-[#afa7ad] relative'>
+                                                <FaUserTag className='absolute top-1 text-2xl' />
+                                                <Input className='pl-8 border-2 border-t-0 border-l-0 border-r-0 rounded-none focus-visible:ring-0' placeholder="Please inter your last name" {...field} />
+                                            </div>
                                         </FormControl>
                                         <FormMessage />
                                     </FormItem>
                                 )}
                             />
                         </div>
-                        <Button variant={'registerButton'} type="submit">Submit</Button>
+                        <Button variant={'custom'} type="submit">Sign Up</Button>
                     </form>
                 </Form>
                 <h5 className='text-sm font-semibold text-[#afa7ad] text-center mt-16 mb-6'>Or Sign Up Using</h5>
@@ -129,6 +162,7 @@ const Register = () => {
                     <button><AiFillTwitterCircle className='h-14 w-14 text-[#4e9fe8] ' /></button>
                     <button><AiFillGoogleCircle className='h-14 w-14 text-[#d74f3d] ' /></button>
                 </div>
+                <p className='text-center pt-10 text-md font-semibold text-[#afa7ad]'>Al ready have an account please <Link href={"/login"} className='underline text-red-400'>Sign in</Link></p>
             </div>
         </div>
     );
