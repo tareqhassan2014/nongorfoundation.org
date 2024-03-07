@@ -1,10 +1,12 @@
-import { Button } from "@/components/ui/button";
+import BrowseCategory from "@/components/BrowseByCategorys/BrowseCategory";
+import LatestCauses from "@/components/LatestCauses/LatestCauses";
 
 
 export default function Home() {
   return (
     <div>
-      <Button>Complete</Button>
+      <LatestCauses />
+      <BrowseCategory />
     </div>
   );
 }

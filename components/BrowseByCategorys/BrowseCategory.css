@@ -1,0 +1,17 @@
+.polygon_style2 {
+    clip-path: polygon(0 0, 100% 0, 83% 100%, 0% 100%);
+    transition: 1s;
+}
+
+.polygon_style2:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+.browse-style{
+    transition-property: color;
+    transition-duration: 1s;
+}
+.browse-style:hover{
+    color: #f1ae44;
+}
