@@ -11,7 +11,7 @@ const BrowseCategory = () => {
         <div className="text-[#424242] my-36">
             <h1 className="text-center text-5xl font-serif font-semibold mb-4">Browse by Categories</h1>
             <p className="uppercase text-center text-[#8a3bb1]">browse cause now</p>
-            <div className="flex justify-center gap-14 mt-14">
+            <div className="flex flex-col lg:flex-row justify-center gap-14 mt-14">
                 <div className="flex items-center flex-col">
                     <div className=" polygon_style2 py-8 px-16 bg-[#50bac3] text-white">
                         <FaHandsPraying className="text-7xl" />
