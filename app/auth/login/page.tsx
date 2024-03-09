@@ -44,8 +44,10 @@ const Login = () => {
         console.log(values);
     }
     return (
-        <div className='w-full h-screen flex justify-center items-center bg-gradient-to-r from-[#59BFDF] to-[#E739F5]'>
-            <div className='w-full lg:max-w-xl mx-auto h-screen lg:max-h-[650px] lg:rounded-lg rounded-none py-10 px-10 bg-white'>
+
+        <div className='w-full h-screen flex justify-center items-center '>
+            <div className='w-full lg:max-w-xl mx-auto h-screen lg:max-h-[720px] lg:rounded-lg rounded-none pb-16 pt-10 px-10 bg-white'>
+
                 <h2 className='text-3xl font-bold text-center pb-14'>Sign In</h2>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -86,7 +88,7 @@ const Login = () => {
                                 </FormItem>
                             )}
                         />
-                        <button className='text-red-400 text-sm font-semibold underline flex justify-end w-full'><Link href={"/forgetPassword"}>Forgot password?</Link></button>
+                        <button className='text-red-400 text-sm font-semibold underline flex justify-end w-full'><Link href={paths.auth.forgetPassword}>Forgot password?</Link></button>
                         <Button variant={'custom'} className='w-full rounded-full' type="submit">Sign In</Button>
                     </form>
                 </Form>
