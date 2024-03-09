@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "image": "/images.1.jpeg",
+      "title": "Save Poor Children",
+      "short_description": "Help provide education and basic necessities for underprivileged children.",
+      "goal": "$10,000",
+      "raised": "$2,500"
+    },
+    {
+      "id": 2,
+      "image": "/image.2.jpeg",
+      "title": "They Want to Study",
+      "short_description": "Support access to education for children who aspire to learn but lack resources.",
+      "goal": "$15,000",
+      "raised": "$5,000"
+    },
+    {
+      "id": 3,
+      "image": "/image.3.jpg",
+      "title": "Healthy Food For ALL",
+      "short_description": "Promote nutrition and well-being by ensuring access to healthy food for everyone.",
+      "goal": "$20,000",
+      "raised": "$7,500"
+    }
+  ]
+  
