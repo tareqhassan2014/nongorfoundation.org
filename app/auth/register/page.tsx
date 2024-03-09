@@ -53,8 +53,8 @@ const Register = () => {
         console.log(values);
     }
     return (
-        <div className='w-full h-screen flex justify-center items-center bg-gradient-to-tr from-[#61d7dd] to-[#df39f5] '>
-            <div className='w-full lg:max-w-xl mx-auto h-screen lg:max-h-[850px] lg:rounded-lg rounded-none py-10 px-10 bg-white'>
+        <div className='w-full h-screen flex justify-center items-center'>
+            <div className='w-full lg:max-w-xl mx-auto h-screen  lg:max-h-[765px] lg:rounded-lg rounded-none pt-2 lg:py-10 px-10 bg-white'>
                 <h2 className='text-3xl font-bold text-center pb-14'>Sign up</h2>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
