@@ -86,7 +86,7 @@ const Login = () => {
                                 </FormItem>
                             )}
                         />
-                        <button className='text-red-400 text-sm font-semibold underline flex justify-end w-full'><Link href={"/forgetPassword"}>Forgot password?</Link></button>
+                        <button className='text-red-400 text-sm font-semibold underline flex justify-end w-full'><Link href={paths.auth.forgetPassword}>Forgot password?</Link></button>
                         <Button variant={'custom'} className='w-full rounded-full' type="submit">Sign In</Button>
                     </form>
                 </Form>
