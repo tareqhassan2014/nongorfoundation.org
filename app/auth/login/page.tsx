@@ -44,8 +44,10 @@ const Login = () => {
         console.log(values);
     }
     return (
+
         <div className='w-full h-screen flex justify-center items-center '>
             <div className='w-full lg:max-w-xl mx-auto h-screen lg:max-h-[720px] lg:rounded-lg rounded-none pb-16 pt-10 px-10 bg-white'>
+
                 <h2 className='text-3xl font-bold text-center pb-14'>Sign In</h2>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -96,7 +98,7 @@ const Login = () => {
                     <button><AiFillTwitterCircle className='h-14 w-14 text-[#4e9fe8] ' /></button>
                     <button><AiFillGoogleCircle className='h-14 w-14 text-[#d74f3d] ' /></button>
                 </div>
-                <p className='text-center pt-10 text-md font-semibold text-[#afa7ad]'>Do not have an account please <Link href={paths.auth.register} className='underline text-red-400'>Sign Up</Link></p>
+                <p className='text-center pt-10 text-md font-semibold text-[#c7bbc4]'>Do not have an account please <Link href={paths.auth.register} className='underline text-red-400'>Sign Up</Link></p>
             </div>
         </div>
     );
