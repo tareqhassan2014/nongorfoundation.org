@@ -11,4 +11,7 @@ export const paths = {
     newPassword: `${ROOTS.AUTH}/new-password`,
   },
   home: "/",
+  pages:{
+    volunteer: '/pages/volunteer'
+  }
 };
