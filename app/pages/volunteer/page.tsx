@@ -25,7 +25,7 @@ const page = () => {
           </h4>
         </div>
 
-        <div className=" grid lg:grid-cols-2 md:grid-cols-1 gap-10">
+        <div className=" grid lg:grid-cols-2 md:grid-cols-1 gap-10 p-5">
           {/* form left side image & desc section */}
           <section>
             <Image
@@ -58,12 +58,12 @@ const page = () => {
                 </li>
               </ul>
 
-              <div className=" grid grid-cols-2 border-t-2 border-b-2 py-5 mt-5 ">
-                <div>
+              <div className=" flex justify-center items-center sm:gap-16 gap-8 border-t-2 border-b-2 py-5 mt-5">
+                <div className=" flex flex-col justify-center items-center">
                   <h3 className=" font-semibold text-lg">Call us</h3>
                   <p className=" text-orange-400 mt-2">01700 000 000</p>
                 </div>
-                <div>
+                <div className=" flex flex-col justify-center items-center">
                   <h3 className=" font-semibold text-lg">Send email</h3>
                   <p className=" text-orange-400 mt-2">nongorfoundation@gmail.com</p>
                 </div>
