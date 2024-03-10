@@ -6,8 +6,8 @@ const Navbar = () => {
 	return (
 		<section>
 			{/* Contact Information */}
-			<div className="bg-orange-600 p-5 font-semibold">
-				<div className=" md:flex content-center items-center gap-16">
+			<div className="bg-orange-600 p-5 text-sm text-white flex flex-col items-center lg:flex-row justify-between">
+				<div className=" md:flex content-center items-center gap-6">
 					<div className=" flex content-center items-center gap-1">
 						<MdOutlineMarkEmailUnread />
 						<p>info@nongorfoundation.org</p>
@@ -19,7 +19,7 @@ const Navbar = () => {
 					</div>
 				</div>
 
-				<div className="hidden md:flex content-center items-center gap-1 ml-40">
+				<div className="hidden md:flex items-center gap-1">
 					<p>Pellentesque hendrerit turpis magna, non</p>
 					<FaFacebookF /> <FaYoutube /> <FaTwitter /> <FaInstagram />
 				</div>

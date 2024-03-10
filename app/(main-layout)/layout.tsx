@@ -7,7 +7,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<div className="md:container mx-auto">
+		<div>
 			<Navbar />
 			{children}
 			<Footer />
