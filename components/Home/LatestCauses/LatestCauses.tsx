@@ -15,7 +15,7 @@ const LatestCauses = () => {
                 <p className="uppercase text-center text-[#8a3bb1]">help use now</p>
                 <div className="flex gap-8 flex-col lg:flex-row mt-14">
                     {latestCauses.map(data => <div key={data.id} className="w-[370px]" >
-                        <div className="mb-3">
+                        <div className="">
                             <Image src={data.image} alt="help them to raise" height={420} width={370} style={{ height: "auto" }} />
                         </div>
                         <div className="bg-[#f2f0ec] py-10 px-10">
