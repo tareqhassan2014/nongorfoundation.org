@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import image from "@/public/volunteer.webp";
 import { BiSolidRightArrow } from "react-icons/bi";
-import { Button } from "@/components/ui/button";
 
 const page = () => {
   return (
