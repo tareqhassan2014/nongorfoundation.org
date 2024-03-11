@@ -9,7 +9,7 @@ const devProfile = () => {
         <h1 className="uppercase text-center w-full lg:text-6xl text-4xl font-extrabold font-serif">
           Latent Talent <i className=" font-sans font-extralight text-xl">Team</i>
         </h1>
-        <div className=" flex flex-wrap justify-start md:justify-center items-center md:gap-10 gap-3 mt-5">
+        <div className=" sm:flex flex-wrap justify-center items-center md:gap-10 gap-3 mt-5 hidden">
           <p>address: .......................... </p>
           <p>contact: .......................... </p>
           <p>Email: .......................@gmail.com</p>

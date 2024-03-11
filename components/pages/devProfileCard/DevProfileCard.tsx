@@ -5,14 +5,15 @@ import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import { FaFacebook } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
+import { BiRightArrowAlt } from "react-icons/bi";
 
 const DevProfileCard = () => {
   return (
     <div>
-      <div className=" sm:w-60 w-full h-auto flex flex-col gap-3 md:p-0 p-4">
+      <div className="  h-auto flex flex-col gap-3 md:p-0 p-4">
         {/* single card image*/}
         <div className=" border-2 border-black rounded-md flex justify-center items-center p-2">
-          <div className="">
+          <div className=" sm:w-60 w-full ">
             <Image src={ibrahim} alt="ibrahim" className=" rounded-md "/>
           </div>
         </div>
@@ -44,6 +45,12 @@ const DevProfileCard = () => {
               className=" border-2 hover:border-black hover:border-2 rounded-full p-2"
             >
               <FaFacebook className=" scale-105 group-hover:scale-125 transition-all duration-300 ease-in " />
+            </Link>
+            <Link
+              href="#"
+              className=" border-2 hover:border-black hover:border-2 rounded-full p-2"
+            >
+              <BiRightArrowAlt  className=" scale-105 group-hover:scale-125 transition-all duration-300 ease-in " />
             </Link>
           </div>
         </div>
