@@ -3,7 +3,7 @@ import React from "react";
 import image from "@/public/volunteer.webp";
 import { BiSolidRightArrow } from "react-icons/bi";
 
-const page = () => {
+const volunteer = () => {
   return (
     <main>
       {/* page header */}
@@ -143,4 +143,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default volunteer;

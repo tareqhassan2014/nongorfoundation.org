@@ -13,6 +13,11 @@ export default function Home() {
 			<Button variant="outline">
 				<Link href={paths.pages.volunteer}>Become a volunteer</Link>
 			</Button>
+
+			<Button variant="outline">
+				<Link href={paths.pages.devProfile}>Developer Profile</Link>
+			</Button>
+			
 		</main>
 	);
 }
