@@ -26,7 +26,7 @@ const devProfile = () => {
           <h3 className=" uppercase bg-slate-200 rounded-lg p-2 w-40 text-center font-semibold "> Developers </h3>
         </div>
         {/* <hr className=" border-1 "/> */}
-        <div className=" flex flex-wrap gap-10 justify-center items-center py-10">
+        <div className=" flex flex-wrap md:gap-10 gap-5 justify-center items-center py-10">
           <DevProfileCard />
           <DevProfileCard />
           <DevProfileCard />
