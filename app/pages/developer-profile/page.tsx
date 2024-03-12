@@ -1,5 +1,7 @@
 import DevProfileCard from "@/components/pages/devProfileCard/DevProfileCard";
+import { developerData } from "@/public/Data/developerData";
 import React from "react";
+
 
 const devProfile = () => {
   return (
@@ -16,9 +18,9 @@ const devProfile = () => {
         </div>
       </div>
 
-<div>
+      <div>
 
-</div>
+      </div>
 
       {/* card section */}
       <section className=" max-w-[1200px] mx-auto mt-10">
@@ -27,14 +29,10 @@ const devProfile = () => {
         </div>
         {/* <hr className=" border-1 "/> */}
         <div className=" flex flex-wrap md:gap-10 gap-5 justify-center items-center md:py-10 py-5">
-          <DevProfileCard />
-          <DevProfileCard />
-          <DevProfileCard />
-          <DevProfileCard />
-          <DevProfileCard />
-          <DevProfileCard />
-          <DevProfileCard />
-          <DevProfileCard />
+
+          {
+            developerData.map(data => <DevProfileCard key={data.id} {...data} />)
+          }
         </div>
       </section>
     </main>
