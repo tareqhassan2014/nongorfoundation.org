@@ -10,14 +10,16 @@ const VolunteerSection = () => {
 				</h1>
 			</div> */}
 			{/* page header */}
-			<div className=" bg-gradient-to-r from-[#59BFDF] to-[#E739F5] px-10 lg:py-16 py-10 text-white my-5">
+			<div className=" bg-gradient-to-r from-[#59BFDF] to-[#E739F5] px-10 lg:py-16 py-10 text-white">
 				<h1 className="uppercase text-center w-full lg:text-6xl text-4xl font-extrabold font-serif">
 					Become A Volunteer
 				</h1>
 			</div>
 			<div className="container mx-auto">
 				<div className=" mb-10 ">
-					<h1 className=" font-serif text-center w-full text-5xl font-semibold">Register Now</h1>
+					<h1 className=" font-serif text-center w-full text-3xl lg:text-5xl font-semibold mt-5">
+						Register Now
+					</h1>
 					<h4 className=" text-center w-full text-orange-400 mt-5">JOIN US NOW</h4>
 				</div>
 

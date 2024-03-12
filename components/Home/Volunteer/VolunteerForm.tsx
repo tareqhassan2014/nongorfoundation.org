@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import React from "react";
 
 const VolunteerForm = () => {
@@ -61,12 +62,15 @@ const VolunteerForm = () => {
 				</div>
 
 				<div>
-					<button
-						className=" bg-gradient-to-r from-[#59BFDF] to-[#E739F5] text-white p-3 rounded-md text-lg "
-						type="submit"
-					>
-						Send Message
-					</button>
+					<Button variant={"custom"} type="submit">
+						Submit
+					</Button>
+					{/* <button className="btn relative inline-flex items-center justify-start overflow-hidden transition-all bg-gradient-to-tr from-[#59BFDF] to-[#E739F5]   rounded hover:bg-white group">
+ 						<span className="w-0 rounded  bg-black bg-opacity-20 absolute left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+						<span className="w-full text-white transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+							hover effect 2
+						</span>
+					</button> */}
 				</div>
 			</form>
 		</section>

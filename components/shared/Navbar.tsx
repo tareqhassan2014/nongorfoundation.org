@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/public/Profile Photo logo.jpg";
+import logo from "@/public/Nogor Foundation.jpg";
+import { Button } from "../ui/button";
 
 interface MenuItem {
 	name: string;
@@ -57,7 +58,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="navbar">
+		<div className="navbar my-3">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -91,13 +92,15 @@ const Navbar = () => {
 						</li>
 					</ul>
 				</div>
-				<Image src={logo} height={90} width={150} alt="website logo" />
+				<Image src={logo} height={90} width={150} className="md:w-56" alt="website logo" />
 			</div>
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal px-1 flex">{GenerateMenu(Menu)}</ul>
 			</div>
 			<div className="navbar-end">
-				<a className="btn btn-accent text-white rounded-none py-non">DONATE</a>
+				<Link href={"/"}>
+					<Button variant={"custom"}>Donate</Button>
+				</Link>
 			</div>
 		</div>
 	);
