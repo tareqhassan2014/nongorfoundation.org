@@ -1,6 +1,6 @@
 const ROOTS = {
   AUTH: "/auth",
-  DASHBOARD: "/dashboard",
+  DASHBOARD: "/dashboard"
 };
 export const paths = {
   auth: {
@@ -12,6 +12,7 @@ export const paths = {
   },
   home: "/",
   pages:{
-    volunteer: '/pages/volunteer'
+    volunteer: '/pages/volunteer',
+    devProfile: '/pages/developer-profile'
   }
 };
