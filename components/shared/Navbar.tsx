@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/public/logo-color.png";
+import logo from "@/public/Profile Photo logo.jpg";
 
 interface MenuItem {
 	name: string;
