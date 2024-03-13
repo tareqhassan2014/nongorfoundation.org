@@ -3,8 +3,7 @@ import React from "react";
 import image from "@/public/volunteer.webp";
 import { BiSolidRightArrow } from "react-icons/bi";
 
-<<<<<<< HEAD
-const page = () => {
+const Volunteer = () => {
 	return (
 		<main>
 			{/* page header */}
@@ -13,17 +12,6 @@ const page = () => {
 					Become A Volunteer
 				</h1>
 			</div>
-=======
-const volunteer = () => {
-  return (
-    <main>
-      {/* page header */}
-      <div className=" bg-gradient-to-r from-[#59BFDF] to-[#E739F5] px-10 lg:py-16 py-10 text-white">
-        <h1 className="uppercase text-center w-full lg:text-6xl text-4xl font-extrabold font-serif">
-          Become A Volunteer
-        </h1>
-      </div>
->>>>>>> 56a9e2d6a8878c60d3983d67b0309b420f07fcf2
 
 			{/* start form section */}
 			<div className=" max-w-[1000px] mx-auto mt-10 py-10">
@@ -149,4 +137,4 @@ const volunteer = () => {
 	);
 };
 
-export default volunteer;
+export default Volunteer;
