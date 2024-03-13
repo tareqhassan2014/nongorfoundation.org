@@ -40,11 +40,9 @@ const LatestCauses = () => {
 									<span className="font-semibold">Raised:</span>
 									<span className="text-red-500 font-semibold">{data.raised}</span>
 								</p>
-								{/* <button className="polygon_style donate-btn mt-8">
-                                <Link>donate now</Link>
-                            </button> */}
+
 								<Link href={"#"}>
-									<Button variant={"custom"}>Donate Now</Button>{" "}
+									<Button variant={"custom"}>Donate Now</Button>
 								</Link>
 							</div>
 						</div>
