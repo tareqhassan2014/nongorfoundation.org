@@ -1,13 +1,15 @@
 import BrowseCategory from "@/components/Home/BrowseByCategory/BrowseCategory";
 import LatestCauses from "@/components/Home/LatestCauses/LatestCauses";
-import NaturalDisaster from "@/components/NaturalDisaster/NaturalDisaster";
+import MedicalCamp from "@/components/Home/MedicelCamp/MedicalCamp";
+import NaturalDisaster from "@/components/Home/NaturalDisaster/NaturalDisaster";
 import React from "react";
 
 const Home = () => {
 	return (
 		<div>
-			<NaturalDisaster />
 			<LatestCauses />
+			<NaturalDisaster />
+			<MedicalCamp />
 			<BrowseCategory />
 		</div>
 	);
