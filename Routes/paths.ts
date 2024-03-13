@@ -15,5 +15,6 @@ export const paths = {
     volunteer: "/pages/volunteer",
     naturalDisaster: "/pages/natural-disaster",
     medicalHelp: "/pages/medical-help",
+    devProfile: "/pages/developer-profile",
   },
 };
