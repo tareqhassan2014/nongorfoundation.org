@@ -1,6 +1,11 @@
 export const freeMedicalCamp = [
   {
     id: 1,
+    courseOfAction:
+      "Healthy life peaceful mind. Making constructive efforts to implement timely functional health care in rural townships. Cooperate fully to ensure the health rights of marginalized people.",
+  },
+  {
+    id: 2,
     name: "Emergency Medical Assistance",
     image: "/home/medicel_help-3.jpg",
     details:
@@ -8,14 +13,14 @@ export const freeMedicalCamp = [
   },
 
   {
-    id: 2,
+    id: 3,
     name: "Blood Drives",
     image: "/home/medicel_help-2.jpg",
     details:
       "During droughts, people suffer from water scarcity, leading to difficulties accessing clean water for drinking, sanitation, and agriculture. This scarcity often results in food shortages as crops fail, leading to malnutrition and economic hardship for farmers. Livelihoods are further threatened as pastoralists struggle to feed and maintain their livestock. The economic impact is profound, with declines in agricultural productivity contributing to poverty and income loss. Environmental degradation, such as soil erosion and desertification, exacerbates the situation, affecting ecosystems and biodiversity. Social tensions may arise due to increased competition for dwindling resources, potentially leading to conflicts over water and land. Vulnerable populations, including children, the elderly, and those with health conditions, bear the brunt of these challenges. Ultimately, droughts pose long-term challenges to economic and environmental sustainability.",
   },
   {
-    id: 3,
+    id: 4,
     name: "Free Medicine",
     image: "/home/medicel_help-1.jpg",
     details:
