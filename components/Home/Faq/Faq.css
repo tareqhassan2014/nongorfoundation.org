@@ -1,0 +1,7 @@
+.quest{
+    transition-property: color;
+    transition-duration: 0.7s;
+}
+.quest:hover{
+    color: orange;
+}
