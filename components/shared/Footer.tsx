@@ -141,9 +141,9 @@ const Footer = () => {
                         elementClassNames='grid grid-cols-4 gap-5'
                     >
                         {
-                            fakeDb?.map(item => 
+                            fakeDb?.map(item =>
                                 <Link key={item.id} href={item.image}>
-                                    <Image src={item.image} width={100} height={100} alt='sevice image' /> 
+                                    <Image src={item.image} width={100} height={100} alt='sevice image' />
                                 </Link>
                             )
                         }

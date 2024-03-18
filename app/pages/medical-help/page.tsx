@@ -6,13 +6,18 @@ import React from 'react';
 import { MdKeyboardBackspace } from 'react-icons/md';
 
 const MedicalHelp = () => {
+    const filterMedicalCamp = freeMedicalCamp.filter(data => data.image)
     return (
         <div className='py-8 lg:py-16 space-y-10 lg:space-y-20 text-center max-w-7xl mx-auto px-2 lg:px-0'>
-            <button className='flex justify-start lg:text-3xl font-semibold border p-2 lg:p-4 rounded-full border-black'><Link href={"/home"}><MdKeyboardBackspace /></Link></button>
+            <button className='flex justify-start lg:text-3xl font-semibold border p-2 lg:p-4 rounded-full border-black'><Link href={"/"}><MdKeyboardBackspace /></Link></button>
             {
-                freeMedicalCamp.map(data => <div key={data.id}>
+                filterMedicalCamp.map(data => <div key={data.id}>
                     <h1 className='text-[#424242] text-5xl font-serif font-semibold mb-5'>{data.name}</h1>
-                    <Image src={data.image} alt='medical_help' height={550} width={950} className='max-w-60 md:max-w-2xl lg:max-w-5xl mx-auto border object-cover'></Image>
+                    {
+                        data.image
+                        &&
+                        <Image src={data.image} alt='medical_help' height={550} width={950} className='max-w-60 md:max-w-2xl lg:max-w-5xl mx-auto border object-cover'></Image>
+                    }
                     <p className='font-serif mt-3 font-semibold'>{data.details}</p>
                 </div>)
             }

@@ -1,5 +1,10 @@
 export const naturalDisaster = [
   {
+    id: 1,
+    courseOfAction:
+      "Natural disasters are catastrophic events resulting from natural processes such as floods, droughts, cyclones, earthquakes, wildfires, and volcanic eruptions. These events pose significant risks to human life, infrastructure, and the environment. Floods cause devastation through inundation, displacement, and waterborne diseases, while droughts lead to water scarcity, food shortages, and economic hardship. Cyclones ",
+  },
+  {
     id: 2,
     name: "Flood",
     image: "/home/natural-disaster-1.webp",
