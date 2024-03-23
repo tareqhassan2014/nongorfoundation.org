@@ -14,7 +14,7 @@ import Faq from "@/components/Home/Faq/Faq";
 const Home = () => {
 	return (
 		<div>
-			<VolunteerSection />
+			{/* <VolunteerSection /> */}
 			<LatestCauses />
 			{/* <NaturalDisaster /> */}
 			<MedicalCamp />
