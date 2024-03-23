@@ -1,7 +1,5 @@
-import Image from "next/image";
+
 import Link from "next/link";
-import logo from "@/public/Nogor Foundation.jpg";
-import { Button } from "../ui/button";
 
 interface MenuItem {
 	name: string;
@@ -43,23 +41,21 @@ const Navbar = () => {
 			menu.subMenu && menu.subMenu.length > 0 ? (
 				<li key={i}>
 					<details>
-						<summary style={{ backgroundColor: "#e7e9ef00 !important" }}>{menu.name}</summary>
+						<summary>{menu.name}</summary>
 						<ul className="p-2">{GenerateMenu(menu.subMenu)}</ul>
 					</details>
 				</li>
 			) : (
 				<li key={i}>
-					<Link href={menu.path} style={{ backgroundColor: "#e7e9ef00 !important" }}>
-						{menu.name}
-					</Link>
+					<Link href={menu.path}>{menu.name}</Link>
 				</li>
 			)
 		);
 	};
 
 	return (
-		<div className="navbar my-3">
-			<div className="navbar-start">
+		<div className="navbar my-3 bg-green-700">
+			<div>
 				<div className="dropdown">
 					<div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
 						<svg
@@ -72,7 +68,7 @@ const Navbar = () => {
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
 						</svg>
 					</div>
-					<ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
+					<ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
 						<li>
 							<a>Item 1</a>
 						</li>
@@ -92,15 +88,9 @@ const Navbar = () => {
 						</li>
 					</ul>
 				</div>
-				<Image src={logo} height={90} width={150} className="md:w-56" alt="website logo" />
 			</div>
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal px-1 flex">{GenerateMenu(Menu)}</ul>
-			</div>
-			<div className="navbar-end">
-				<Link href={"/"}>
-					<Button variant={"custom"}>Donate</Button>
-				</Link>
 			</div>
 		</div>
 	);

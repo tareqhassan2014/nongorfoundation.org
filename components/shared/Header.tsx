@@ -1,27 +1,34 @@
-import { MdOutlineMarkEmailUnread } from "react-icons/md";
-import { PiClockCountdownBold } from "react-icons/pi";
-import { FaFacebookF, FaYoutube, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa6";
+import { AiFillMail } from "react-icons/ai";
+import { IoCall } from "react-icons/io5";
+import { FaFacebookSquare } from "react-icons/fa";
+import EngBnToggle from "./EngBnToggle";
+import Link from "next/link";
 
-const Header = () => {
+const Header: React.FC = () => {
+	let size = 20;
 	return (
-		<div className="bg-orange-600 p-5 text-sm text-white flex flex-col items-center lg:flex-row justify-between">
-			<div className=" md:flex content-center items-center gap-6">
-				<div className=" flex content-center items-center gap-1">
-					<MdOutlineMarkEmailUnread />
-					<p>info@nongorfoundation.org</p>
-				</div>
+		<section className=" py-2 bg-white ">
+			<div className=" flex justify-end items-center gap-2 container mx-auto ">
+				<Link href="https://facebook.com" target="_blank">
+					<FaFacebookSquare size={size} fill="blue " />
+				</Link>
 
-				<div className=" flex content-center items-center gap-1">
-					<PiClockCountdownBold />
-					<p>Mon - Sat: 08.00 am - 05:00</p>
-				</div>
-			</div>
+				<Link href="https://youtube.com" target="_blank">
+					<FaYoutube size={size} fill="red " />
+				</Link>
 
-			<div className="hidden md:flex items-center gap-1">
-				<p>Pellentesque hendrerit turpis magna, non</p>
-				<FaFacebookF /> <FaYoutube /> <FaTwitter /> <FaInstagram />
+				<Link href="https://gmail.com" target="_blank">
+					<AiFillMail size={size} fill=" green " />
+				</Link>
+
+				<Link href="https://facebook.com" target="_blank">
+					<IoCall size={size} fill=" green " />
+				</Link>
+
+				<EngBnToggle />
 			</div>
-		</div>
+		</section>
 	);
 };
 

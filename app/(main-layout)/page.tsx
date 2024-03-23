@@ -10,10 +10,12 @@ import Training from "@/components/Home/Training/Training";
 import Culture from "@/components/Home/Culture/Culture";
 import Awareness from "@/components/Home/Awareness/Awareness";
 import Faq from "@/components/Home/Faq/Faq";
+import CarouselBar from "@/components/Home/Carucel/Carucel";
 
 const Home = () => {
 	return (
 		<div>
+			<CarouselBar />
 			{/* <VolunteerSection /> */}
 			<LatestCauses />
 			{/* <NaturalDisaster /> */}
