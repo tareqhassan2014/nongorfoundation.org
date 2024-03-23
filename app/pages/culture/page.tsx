@@ -9,7 +9,7 @@ const Culture = () => {
     const filterCulture = culture.filter(data => data.image)
     return (
         <div className='py-8 lg:py-16 space-y-10 lg:space-y-20 text-center max-w-7xl mx-auto px-2 lg:px-0'>
-            <button className='flex justify-start lg:text-3xl font-semibold border p-2 lg:p-4 rounded-full border-black'><Link href={"/"}><MdKeyboardBackspace /></Link></button>
+            <Link href={"/"}><button className='flex justify-start lg:text-3xl font-semibold border p-2 lg:p-4 rounded-full border-black'><MdKeyboardBackspace /></button></Link>
             {
                 filterCulture.map(data => <div key={data.id}>
                     <h1 className='text-[#424242] text-5xl font-serif font-semibold mb-5'>{data.name}</h1>
