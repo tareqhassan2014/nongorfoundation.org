@@ -1,109 +1,61 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
-import logo from "@/public/Nogor Foundation.jpg";
-import { Button } from "../ui/button";
+import { useState, useEffect } from "react";
 
-interface MenuItem {
-	name: string;
-	path: string;
-	subMenu?: MenuItem[];
-}
+const NavBar: React.FC = () => {
+	const [showSubMenu, setShowSubMenu] = useState(false);
 
-const Navbar = () => {
-	const Menu: MenuItem[] = [
-		{ name: "First", path: "/f" },
-		{
-			name: "Second",
-			path: "/s",
-			subMenu: [
-				{
-					name: "sub1",
-					path: "/s1",
-					subMenu: [
-						{ name: "sub1", path: "/s1" },
-						{ name: "sub2", path: "/s2" },
-					],
-				},
-				{ name: "sub2", path: "/s2" },
-			],
-		},
-		{ name: "Third", path: "/t" },
-		{
-			name: "Fourth",
-			path: "/f",
-			subMenu: [
-				{ name: "sub1", path: "/s1" },
-				{ name: "sub2", path: "/s2" },
-			],
-		},
-	];
+	const navItemClassNames =
+		"py-2 hover:border-b-2 border-green-500 text-white hover:text-green-500 transition-all duration-500 ease-in-out";
 
-	const GenerateMenu = (array: MenuItem[]) => {
-		return array.map((menu, i) =>
-			menu.subMenu && menu.subMenu.length > 0 ? (
-				<li key={i}>
-					<details>
-						<summary style={{ backgroundColor: "#e7e9ef00 !important" }}>{menu.name}</summary>
-						<ul className="p-2">{GenerateMenu(menu.subMenu)}</ul>
-					</details>
-				</li>
-			) : (
-				<li key={i}>
-					<Link href={menu.path} style={{ backgroundColor: "#e7e9ef00 !important" }}>
-						{menu.name}
-					</Link>
-				</li>
-			)
-		);
+	const handleSubMenuEnter = () => {
+		setShowSubMenu(true);
 	};
 
+	useEffect(() => {
+		// Function to handle clicks outside the submenu
+		const handleClickOutside = (event: MouseEvent) => {
+			const target = event.target as HTMLElement;
+			if (!target.closest(".submenu")) {
+				setShowSubMenu(false);
+			}
+		};
+
+		// Add event listener when component mounts
+		document.body.addEventListener("click", handleClickOutside);
+
+		// Clean up event listener when component unmounts
+		return () => {
+			document.body.removeEventListener("click", handleClickOutside);
+		};
+	}, []);
+
 	return (
-		<div className="navbar my-3">
-			<div className="navbar-start">
-				<div className="dropdown">
-					<div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							className="h-5 w-5"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
-							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
-						</svg>
-					</div>
-					<ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
-						<li>
-							<a>Item 1</a>
-						</li>
-						<li>
-							<a>Parent</a>
-							<ul className="p-2">
-								<li>
-									<a>Submenu 1</a>
-								</li>
-								<li>
-									<a>Submenu 2</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a>Item 3</a>
-						</li>
-					</ul>
-				</div>
-				<Image src={logo} height={90} width={150} className="md:w-56" alt="website logo" />
-			</div>
-			<div className="navbar-center hidden lg:flex">
-				<ul className="menu menu-horizontal px-1 flex">{GenerateMenu(Menu)}</ul>
-			</div>
-			<div className="navbar-end">
-				<Link href={"/"}>
-					<Button variant={"custom"}>Donate</Button>
-				</Link>
-			</div>
+		<div className="bg-green-900 mb-2 tracking-wider">
+			<ul className="container mx-auto hidden lg:flex justify-start items-center gap-x-10 h-14 ">
+				<li onMouseEnter={handleSubMenuEnter} >
+					<Link href="/" className={navItemClassNames}>
+						Home
+					</Link>
+				</li>
+				<li onMouseEnter={handleSubMenuEnter} >
+					<Link href="/about" className={navItemClassNames}>
+						About
+					</Link>
+					{showSubMenu && (
+						<ul className="submenu absolute mt-8 bg-white p-2 rounded shadow-md z-10" onMouseEnter={handleSubMenuEnter}>
+							<li>
+								<Link href="/sub-menu-item-1">Nav 1</Link>
+							</li>
+						</ul>
+					)}
+				</li>
+			</ul>
 		</div>
 	);
 };
 
-export default Navbar;
+export default NavBar;
+
+
