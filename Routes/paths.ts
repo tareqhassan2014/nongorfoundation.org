@@ -17,4 +17,8 @@ export const paths = {
     medicalHelp: "/pages/medical-help",
     devProfile: "/pages/developer-profile",
   },
+  information: {
+    about: "/information/about",
+    structure: "/information/structure",
+  },
 };

@@ -7,10 +7,13 @@ const NavBar: React.FC = () => {
 	const [showSubMenu, setShowSubMenu] = useState(false);
 
 	const navItemClassNames =
-		"py-2 hover:border-b-2 border-green-500 text-white hover:text-green-500 transition-all duration-500 ease-in-out";
+		"py-2 hover:border-b-2 border-green-500 hover:text-green-500 transition-all duration-500 ease-in-out";
 
-	const handleSubMenuEnter = () => {
+	const handleSubMenuEnterInfo = () => {
 		setShowSubMenu(true);
+	};
+	const hideSubMenu = () => {
+		setShowSubMenu(false);
 	};
 
 	useEffect(() => {
@@ -32,21 +35,24 @@ const NavBar: React.FC = () => {
 	}, []);
 
 	return (
-		<div className="bg-green-900 mb-2 tracking-wider">
+		<div className="bg-white mb-2 tracking-wider">
 			<ul className="container mx-auto hidden lg:flex justify-start items-center gap-x-10 h-14 ">
-				<li onMouseEnter={handleSubMenuEnter} >
+				<li>
 					<Link href="/" className={navItemClassNames}>
 						Home
 					</Link>
 				</li>
-				<li onMouseEnter={handleSubMenuEnter} >
-					<Link href="/about" className={navItemClassNames}>
-						About
-					</Link>
+				<li onMouseEnter={handleSubMenuEnterInfo} >
+					<p className={navItemClassNames}>
+						Information
+					</p>
 					{showSubMenu && (
-						<ul className="submenu absolute mt-8 bg-white p-2 rounded shadow-md z-10" onMouseEnter={handleSubMenuEnter}>
-							<li>
-								<Link href="/sub-menu-item-1">Nav 1</Link>
+						<ul className="submenu absolute mt-8 bg-white p-2 rounded shadow-md z-10" onMouseEnter={handleSubMenuEnterInfo}>
+							<li onClick={hideSubMenu}>
+								<Link href="/information/about" className="hover:text-green-500">About</Link>
+							</li>
+							<li onClick={hideSubMenu}>
+								<Link href="/information/structure" className="hover:text-green-500">Structure</Link>
 							</li>
 						</ul>
 					)}
