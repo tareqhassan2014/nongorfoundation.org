@@ -11,7 +11,7 @@ interface MenuItem {
 
 const Navbar = () => {
 	const Menu: MenuItem[] = [
-		{ name: "First", path: "/f" },
+		{ name: "Home", path: "/" },
 		{
 			name: "Second",
 			path: "/s",
