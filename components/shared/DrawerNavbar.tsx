@@ -20,38 +20,30 @@ const DrawerNavBar: React.FC = () => {
             </DrawerTrigger>
             <DrawerContent>
                 <div>
-                    <ul className=" gap-1 py-5 w-full ">
+                    <ul className=" gap-1 py-5 w-full">
                         <li className=" flex justify-center items-center h-10 overflow-hidden mb-5 px-10">
                             <Image src={logoName} alt="..." className=" h-full w-auto " />
                         </li>
-
                         <Link href="/">
-                            <li onClick={() => setActiveBtn('Home')} className={navItemClassNames('Home')}><DrawerClose className=" w-full h-full p-2" >Home</DrawerClose></li>
+                            <li onClick={() => setActiveBtn('Home')} className={navItemClassNames('Home')}>
+                                <DrawerClose className=" w-full h-full p-2 border-b-2 border-[#9c80e9]" >Home</DrawerClose>
+                            </li>
                         </Link>
-                        <Link href="/about">
-                            <li onClick={() => setActiveBtn('About')} className={navItemClassNames('About')}><DrawerClose className=" w-full h-full p-2">About</DrawerClose></li>
-                        </Link>
-                        <Link href="/projects" >
-                            <li onClick={() => setActiveBtn('Projects')} className={navItemClassNames('Projects')}><DrawerClose className=" w-full h-full p-2">Projects</DrawerClose></li>
-                        </Link>
-                        <Link href="/donore">
-                            <li onClick={() => setActiveBtn('Donore')} className={navItemClassNames('Donore')}><DrawerClose className=" w-full h-full p-2">Donore</DrawerClose></li>
-                        </Link>
-                        <Link href="/gallery/iftar-distribution">
-                            <li onClick={() => setActiveBtn('Gallery')} className={navItemClassNames('Gallery')}><DrawerClose className=" w-full h-full p-2">Gallery</DrawerClose></li>
-                        </Link>
-                        <Link href="#">
-                            <li onClick={() => setActiveBtn('Video')} className={navItemClassNames('Video')}><DrawerClose className=" w-full h-full p-2">Video</DrawerClose></li>
-                        </Link>
-                        <Link href="#">
-                            <li onClick={() => setActiveBtn('Volunteer')} className={navItemClassNames('Volunteer')}><DrawerClose className=" w-full h-full p-2">Volunteer</DrawerClose></li>
-                        </Link>
-                        <Link href="/news">
-                            <li onClick={() => setActiveBtn('News')} className={navItemClassNames('News')}><DrawerClose className=" w-full h-full p-2">News</DrawerClose></li>
-                        </Link>
-                        <Link href="/contact">
-                            <li onClick={() => setActiveBtn('Contact')} className={navItemClassNames('Contact')}><DrawerClose className=" w-full h-full p-2">Contact</DrawerClose></li>
-                        </Link>
+                        <ul className="border-b-2 border-[#9c80e9]">
+                            <li >
+                                <p className=" w-full h-full p-2 text-center">Information</p>
+                            </li>
+                            <Link href="/information/about">
+                                <li onClick={() => setActiveBtn('About')} className={navItemClassNames('About')}>
+                                    <DrawerClose className=" w-full h-full p-2" >About</DrawerClose>
+                                </li>
+                            </Link>
+                            <Link href="/information/structure">
+                                <li onClick={() => setActiveBtn('Structure')} className={navItemClassNames('Structure')}>
+                                    <DrawerClose className=" w-full h-full p-2" >Structure</DrawerClose>
+                                </li>
+                            </Link>
+                        </ul>
                     </ul>
                 </div>
             </DrawerContent>
