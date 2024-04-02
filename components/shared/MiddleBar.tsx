@@ -3,6 +3,7 @@ import Name_logo from "@/public/Nogor Foundation.jpg";
 import logo from "@/public/Profile Photo logo.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import DrawerNavBar from "./DrawerNavbar";
 
 const MiddleBar = () => {
   const activeBtnClasses = " text-center w-auto text-xs md:text-base md:py-3 p-2 md:px-5 text-white bg-green-700 rounded-md ";
@@ -14,7 +15,7 @@ const MiddleBar = () => {
           {/* logo section */}
           <div className=" flex md:justify-start justify-between items-center lg:h-20 h-16 md:gap-5 gap-2">
             <div className=" lg:hidden block ">
-              {/* <DrawerNavBar /> */}
+              <DrawerNavBar />
             </div>
             <div className="h-full overflow-hidden flex justify-center items-center">
               <Image src={Name_logo} alt="logo" className=" md:block hidden max-h-full h-auto w-auto " />
