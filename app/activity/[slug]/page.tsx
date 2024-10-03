@@ -27,27 +27,27 @@ const DynamicActivities: React.FC<paramsType> = ({ params }) => {
           href={paths.home}
           className=" cursor-pointer hover:text-green-800 "
         >
-          Home
+          হোম
         </Link>
         /{" "}
         <Link
           href={paths.activity}
           className=" cursor-pointer hover:text-green-800 "
         >
-          Activities
+          কার্যক্রম
         </Link>
         / <span className=" text-green-800 ">{decodeURIComponent(slug)}</span>
       </Footstep>
 
       <div className=" container mx-auto py-10 ">
         <div className=" flex items-center justify-start gap-5 py-5">
-          <Image src={singleCardData[0].img} alt="logo" className="w-10 h-10" />
+          <Image src={singleCardData?.[0]?.img} alt="logo" className="w-10 h-10" />
           <h1 className=" uppercase text-green-800 font-bold text-3xl ">
-            {singleCardData[0].header}
+            {singleCardData?.[0]?.header}
           </h1>
         </div>
         <hr className=" h-1 " />
-        <p className=" py-4 ">{singleCardData[0].text}</p>
+        <p className=" py-4 ">{singleCardData?.[0]?.text}</p>
 
         <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 py-10">
           <ActivityCardsForSingleItem />

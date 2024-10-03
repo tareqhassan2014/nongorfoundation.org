@@ -43,7 +43,7 @@ const ActivityCardsForSingleItem = () => {
                 <Dialog>
                   <DialogTrigger asChild>
                     <p className=" cursor-pointer hover:underline text-green-700 my-2 hover:scale-110 transition-all duration-300 ease-in text-center">
-                      Read More
+                      আরো পড়ুন
                     </p>
                   </DialogTrigger>
                   <DialogContent className=" overflow-y-scroll h-[90vh] ">

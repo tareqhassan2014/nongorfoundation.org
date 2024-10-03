@@ -13,10 +13,10 @@ const About: React.FC = () => {
   return (
     <div>
       <Footstep>
-        <Link href={paths.home} className=" cursor-pointer hover:text-green-800 "> Home </Link> / <span className=" text-green-800 ">About</span>
+        <Link href={paths.home} className=" cursor-pointer hover:text-green-800 "> হোম </Link> / <span className=" text-green-800 ">আমাদের সম্পর্কে</span>
       </Footstep>
       <div className=" py-20 ">
-        <h2 className="text-center py-3 text-2xl font-semibold">About Us</h2>
+        <h2 className="text-center py-3 text-2xl font-semibold">আমাদের সম্পর্কে</h2>
         <div >
           <div className="container mx-auto py-10">
             <div className="grid grid-cols-12">

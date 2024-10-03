@@ -1,37 +1,37 @@
 export const AboutData = [
   {
     id: 1,
-    name: "Introduction",
+    name: "ভূমিকা",
     description:
-      "Eternal conviction in building a prosperous society - With this motto in mind, this progress is aimed at building a prosperous society in the service of humanity and the implementation of welfare work through cooperation.Social development is only possible with organized cooperation in this era of globalization. Therefore, if we can do something creative for the welfare of the socialized people by utilizing the development of thoughts, consciousness, and intellect of the organized people, the society will be prosperous, and the nation and the next generation will benefit. With the unwavering support and cooperation of the people from all walks of life in the area by incorporating the organizational wisdom of the people engaged in the work of building the society, this organization called 'Nongor Foundation' was established, which will be operated as a non-political, non-profit voluntary social welfare organization InshaAllah.",
+      "সমৃদ্ধ সমাজ বিনির্মাণে অবিরাম প্রত্যয় এই মূলমন্ত্রকে সামনে রেখে পারস্পারিক সহযোগিতার মাধ্যমে কল্যাণধর্মী কার্য বাস্তবায়ন ও মানবতার সেবায় সমৃদ্ধ সমাজ গঠনের মহৎ উদ্দেশ্যে নিয়ে এই অগ্রযাত্রা। বিশ্বায়নের এই যুগে সংঘবদ্ধ সহযোগিতা ছাড়া সমাজ উন্নয়ন সম্ভব নয়। তাই সংঘবদ্ধ মানুষের চিন্তা, চেতনা ও বুদ্ধির বিকাশকে কাজে লাগিয়ে সমাজবদ্ধ মানুষের কল্যাণের জন্য সৃজনশীল কিছু করতে পারলে সমৃদ্ধ হবে সমাজ উপকৃত হবে জাতি এবং আগামী প্রজন্ম। সমাজ গঠনের কাজে নিয়োজিত ব্যক্তিদের সাংগঠনিক প্রজ্ঞা সমন্বিত করে এলাকার সর্বস্তরের জনগণের অকুণ্ঠ সমর্থন ও সহযোগিতা নিয়ে রাষ্ট্রীয় বিধি বিধানের সাথে সংগতি রেখে ২০০৬ সালে এই ফাউন্ডেশনটি প্রতিষ্ঠিত হয়। যা একটি অরাজনৈতিক অলাভজনক স্বেচ্ছাসেবী সমাজকল্যাণমূলক সংগঠন হিসেবে কার্যক্রম পরিচালনা করবে ইনশাআল্লাহ।",
   },
   {
     id: 2,
-    name: "Nature of the organization",
+    name: "সংগঠনের প্রকৃতি",
     description:
-      "It is a non-political, non-profit, and voluntary social welfare organization.",
+      "একটি অরাজনৈতিক, অলাভজনক এবং স্বেচ্ছাসেবী ও সমাজকল্যাণমূলক সংগঠন।",
   },
   {
     id: 3,
-    name: "Arena limits",
+    name: "কর্মক্ষেত্রের সীমা",
     description:
-      "It is hoped to conduct activities in the entire upazila and later in the entire Satkhira district. Subsequently, its activities may be extended to any other district subject to the approval of the concerned authorities.",
+      "সমগ্র সাতক্ষীরা জেলায় কার্যক্রম পরিচালনা করা। পরবর্তীতে নিবন্ধন কর্তৃপক্ষের অনুমোদন সাপেক্ষে অন্য অনুমোদিত জেলাসমূহে এর কার্যক্রম সম্প্রসারণ করা যাবে।",
   },
   {
     id: 4,
-    name: "Aims and Objectives",
-    description: "Eternal conviction in building a prosperous society",
+    name: "লক্ষ্য ও উদ্দেশ্য",
+    description: "পারস্পারিক সহযোগিতার মাধ্যমে কল্যাণধর্মী কার্য বাস্তবায়ন ও মানবতার সেবায় সমৃদ্ধ সমাজ গঠন।",
   },
   {
     id: 5,
-    name: "Slogan",
+    name: "স্লোগান",
     description:
-      "Discover the versatility of Product E, perfect for any occasion.",
+      "সমৃদ্ধ সমাজ বিনির্মাণে অবিরাম প্রত্যয়",
   },
   {
     id: 6,
-    name: "Vision",
+    name: "ভিশন",
     description:
-      "We are establishing a non-discrimination, caste, class, and gender equality-based society which will be environment-dependent. ",
+      "বৈষম্যহীন, বর্ণ, শ্রেনী ও জেন্ডার সমতা ভিত্তিক সমাজ প্রতিষ্ঠা যা হবে পরিবেশ নির্ভর। ",
   },
 ];

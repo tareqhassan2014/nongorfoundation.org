@@ -5,7 +5,7 @@ import { ContextProvider } from "@/components/context/Context";
 import News from "@/components/news/News";
 
 
-export default function Home() {
+export default function হোম() {
   return (
     <ContextProvider>
       <CarouselPage />

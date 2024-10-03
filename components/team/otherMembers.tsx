@@ -9,7 +9,7 @@ const OtherMembers = () => {
 
   return (
     <div className=" py-10 ">
-      <h1 className=" text-center font-semibold ">Our Honorable Members</h1>
+      <h1 className=" text-center font-semibold ">আমাদের সম্মানিত সদস্যবৃন্দ</h1>
       <hr className=" h-1 my-5 " />
       <div className=" grid grid-cols-4 gap-3 container mx-auto">
         {Array.from({ length: 10 }).map((_, index) => (
@@ -23,9 +23,9 @@ const OtherMembers = () => {
               </div>
               <div className=" py-2 w-full flex flex-col justify-center items-center gap-2 ">
                 <h1 className=" font-semibold text-lg uppercase ">
-                  Tareq Hassan
+                  তারেক হাসান
                 </h1>
-                <p className=" text-green-700 text-sm  ">Member</p>
+                <p className=" text-green-700 text-sm  ">সাধারণ সদস্য</p>
 
                 <p>cell: 015+++++++++</p>
               </div>

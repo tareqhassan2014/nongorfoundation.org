@@ -21,7 +21,7 @@ import Image from "next/image";
 import { paths } from "@/utils/paths";
 
 const DrawerNavBar: React.FC = () => {
-  const [activeBtn, setActiveBtn] = useState<string>("Home");
+  const [activeBtn, setActiveBtn] = useState<string>("হোম");
   const navItemClassNames = (btnName: string) =>
     `${
       activeBtn === btnName
@@ -43,19 +43,19 @@ const DrawerNavBar: React.FC = () => {
 
             <Link href="/">
               <li
-                onClick={() => setActiveBtn("Home")}
-                className={navItemClassNames("Home")}
+                onClick={() => setActiveBtn("হোম")}
+                className={navItemClassNames("হোম")}
               >
                 <DrawerClose className=" w-full h-full text-start px-1 ">
-                  Home
+                হোম
                 </DrawerClose>
               </li>
             </Link>
             <Accordion type="multiple" >
               <AccordionItem value="item-1">
                 <AccordionTrigger
-                  onClick={() => setActiveBtn("information")}
-                  className={navItemClassNames("information")}
+                  onClick={() => setActiveBtn("তথ্য")}
+                  className={navItemClassNames("তথ্য")}
                 >
                   Information
                 </AccordionTrigger>
@@ -151,48 +151,48 @@ const DrawerNavBar: React.FC = () => {
                   onClick={() => setActiveBtn("activites")}
                   className={navItemClassNames("activites")}
                 >
-                  Activities
+                  কার্যক্রম
                 </AccordionTrigger>
                 <AccordionContent>
                   <Link href={paths.information.introduction}>
                     <li>
                       <DrawerClose className=" w-full h-full pl-6 py-2 hover:text-green-700 text-start ">
-                        Human needs (Food, Housing, Clothing)
+                      অবাব (অন্ন, বাসস্থান, বস্ত্র)
                       </DrawerClose>
                     </li>
                   </Link>
                   <Link href={paths.information.nature_of_the_organization}>
                     <li>
                       <DrawerClose className=" w-full h-full pl-6 py-2 hover:text-green-700 text-start ">
-                        Nature of the organization
+                      সংগঠনের প্রকৃতি 
                       </DrawerClose>
                     </li>
                   </Link>
                   <Link href={paths.information.arena_limits}>
                     <li>
                       <DrawerClose className=" w-full h-full pl-6 py-2 hover:text-green-700 text-start ">
-                        Arena limits
+                      কর্মক্ষেত্রের সীমা
                       </DrawerClose>
                     </li>
                   </Link>
                   <Link href={paths.information.aims_and_objectives}>
                     <li>
                       <DrawerClose className=" w-full h-full pl-6 py-2 hover:text-green-700 text-start ">
-                        Aims and Objectives
+                      লক্ষ্য ও উদ্দেশ্য
                       </DrawerClose>
                     </li>
                   </Link>
                   <Link href={paths.information.slogan}>
                     <li>
                       <DrawerClose className=" w-full h-full pl-6 py-2 hover:text-green-700 text-start ">
-                        Slogan
+                      স্লোগান
                       </DrawerClose>
                     </li>
                   </Link>
                   <Link href={paths.information.vision}>
                     <li>
                       <DrawerClose className=" w-full h-full pl-6 py-2 hover:text-green-700 text-start ">
-                        Vision
+                      ভিশন
                       </DrawerClose>
                     </li>
                   </Link>
@@ -210,42 +210,42 @@ const DrawerNavBar: React.FC = () => {
                   <Link href={paths.information.introduction}>
                     <li>
                       <DrawerClose className=" w-full h-full pl-6 py-2 hover:text-green-700 text-start ">
-                        Introduction
+                        ভূমিকা
                       </DrawerClose>
                     </li>
                   </Link>
                   <Link href={paths.information.nature_of_the_organization}>
                     <li>
                       <DrawerClose className=" w-full h-full pl-6 py-2 hover:text-green-700 text-start ">
-                        Nature of the organization
+                      সংগঠনের প্রকৃতি 
                       </DrawerClose>
                     </li>
                   </Link>
                   <Link href={paths.information.arena_limits}>
                     <li>
                       <DrawerClose className=" w-full h-full pl-6 py-2 hover:text-green-700 text-start ">
-                        Arena limits
+                      কর্মক্ষেত্রের সীমা
                       </DrawerClose>
                     </li>
                   </Link>
                   <Link href={paths.information.aims_and_objectives}>
                     <li>
                       <DrawerClose className=" w-full h-full pl-6 py-2 hover:text-green-700 text-start ">
-                        Aims and Objectives
+                      লক্ষ্য ও উদ্দেশ্য
                       </DrawerClose>
                     </li>
                   </Link>
                   <Link href={paths.information.slogan}>
                     <li>
                       <DrawerClose className=" w-full h-full pl-6 py-2 hover:text-green-700 text-start ">
-                        Slogan
+                      স্লোগান
                       </DrawerClose>
                     </li>
                   </Link>
                   <Link href={paths.information.vision}>
                     <li>
                       <DrawerClose className=" w-full h-full pl-6 py-2 hover:text-green-700 text-start ">
-                        Vision
+                      ভিশন
                       </DrawerClose>
                     </li>
                   </Link>
@@ -254,8 +254,8 @@ const DrawerNavBar: React.FC = () => {
             </Accordion>
             <Link href={paths.campaign}>
               <li
-                onClick={() => setActiveBtn("Campaign")}
-                className={navItemClassNames("Campaign")}
+                onClick={() => setActiveBtn("প্রচারণা")}
+                className={navItemClassNames("প্রচারণা")}
               >
                 <DrawerClose className=" w-full h-full text-start px-1 ">
                   Campaign
@@ -264,18 +264,18 @@ const DrawerNavBar: React.FC = () => {
             </Link>
             <Link href={paths.news}>
               <li
-                onClick={() => setActiveBtn("News")}
-                className={navItemClassNames("News")}
+                onClick={() => setActiveBtn("সংবাদ")}
+                className={navItemClassNames("সংবাদ")}
               >
                 <DrawerClose className=" w-full h-full text-start px-1 ">
-                  News
+                সংবাদ
                 </DrawerClose>
               </li>
             </Link>
             <Link href={paths.donate}>
               <li
-                onClick={() => setActiveBtn("Volunteer")}
-                className={navItemClassNames("Volunteer")}
+                onClick={() => setActiveBtn("স্বেচ্ছাসেবক")}
+                className={navItemClassNames("স্বেচ্ছাসেবক")}
               >
                 <DrawerClose className=" w-full h-full text-start px-1 ">
                   Donate
@@ -284,8 +284,8 @@ const DrawerNavBar: React.FC = () => {
             </Link>
             <Link href={paths.contact}>
               <li
-                onClick={() => setActiveBtn("Contact")}
-                className={navItemClassNames("Contact")}
+                onClick={() => setActiveBtn("যোগাযোগ")}
+                className={navItemClassNames("যোগাযোগ")}
               >
                 <DrawerClose className=" w-full h-full text-start px-1 ">
                   Contact

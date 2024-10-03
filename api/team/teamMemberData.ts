@@ -22,8 +22,8 @@ export interface MemberDataType {
 export const teamMembersData: MemberDataType[] = [
   {
     id: 1,
-    name: "Md Abdul Kader",
-    designation: "President",
+    name: "মো. আব্দুল কাদের",
+    designation: "সভাপতি",
     img: president,
     contacts: {
       email: "mdakader20@gmail.com",
@@ -35,8 +35,8 @@ export const teamMembersData: MemberDataType[] = [
   },
   {
     id: 2,
-    name: "Md Nazmul Hossain",
-    designation: "Vice President",
+    name: "মো. নাজমুল হোসাইন",
+    designation: "সহ-সভাপতি",
     img: vicePresident,
     contacts: {
       email: "#",
@@ -48,8 +48,8 @@ export const teamMembersData: MemberDataType[] = [
   },
   {
     id: 3,
-    name: "Md Shiful Islam",
-    designation: "General Secretary",
+    name: "মো. সাইফুল ইসলাম",
+    designation: "সাধারণ সম্পাদক",
     img: GeneralSecretary,
     contacts: {
       email: "#",
@@ -61,8 +61,8 @@ export const teamMembersData: MemberDataType[] = [
   },
   {
     id: 4,
-    name: "Md Mohiuddin Hossain",
-    designation: "Joint General Secretary",
+    name: "মো. মহিউদ্দীন হোসাইন",
+    designation: "যুগ্ন সাধারণ সম্পাদক",
     img: JointGeneralSecretary,
     contacts: {
       email: "#",
@@ -74,8 +74,8 @@ export const teamMembersData: MemberDataType[] = [
   },
   {
     id: 5,
-    name: "Md Abdul Gofur",
-    designation: "Cashier",
+    name: "মো. আব্দুল কাদের",
+    designation: "কোষাধ্যক্ষ",
     img: cashier,
     contacts: {
       email: "#",
@@ -87,8 +87,8 @@ export const teamMembersData: MemberDataType[] = [
   },
   {
     id: 6,
-    name: "Md Selim Ullah",
-    designation: "Executive Member",
+    name: "মো. সেলিম উল্লাহ",
+    designation: "কার্যনির্বাহী সদস্য",
     img: executiveMember,
     contacts: {
       email: "#",
@@ -100,8 +100,8 @@ export const teamMembersData: MemberDataType[] = [
   },
   {
     id: 7,
-    name: "Shamima Afrin Lima",
-    designation: "Executive Member",
+    name: "শামীমা আফরিন লিমা",
+    designation: "কার্যনির্বাহী সদস্য",
     img: executiveMember1,
     contacts: {
       email: "#",

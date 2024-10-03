@@ -37,31 +37,17 @@ const About: React.FC = () => {
             className=" h-14 w-auto"
           />
           <h1 className=" font-semibold tracking-wider uppercase ">
-            Nongor Foundation
+            নোঙর ফাউন্ডেশন
           </h1>
         </div>
         <hr className=" bg-slate-300 my-3" />
         <p className=" py-2 text-justify">
-          "Eternal conviction in building a prosperous society" - With this
-          motto in mind, this progress is aimed at building a prosperous society
-          in the service of humanity and the implementation of welfare work
-          through cooperation. Social development is only possible with
-          organized cooperation in this era of globalization. Therefore, if we
-          can do something creative for the welfare of the socialized people by
-          utilizing the development of thoughts, consciousness, and intellect of
-          the organized people, the society will be prosperous, and the nation
-          and the next generation will benefit. With the unwavering support and
-          cooperation of the people from all walks of life in the area by
-          incorporating the organizational wisdom of the people engaged in the
-          work of building the society, this organization called "Nongor
-          Foundation" was established, which will be operated as a
-          non-political, non-profit voluntary social welfare organization
-          InshaAllah.
+           “সমৃদ্ধ সমাজ বিনির্মাণে অবিরাম প্রত্যয়” এই মূলমন্ত্রকে সামনে রেখে পারস্পারিক সহযোগিতার মাধ্যমে কল্যাণধর্মী কার্য বাস্তবায়ন ও মানবতার সেবায় সমৃদ্ধ সমাজ গঠনের মহৎ উদ্দেশ্যে নিয়ে এই অগ্রযাত্রা। বিশ্বায়নের এই যুগে সংঘবদ্ধ সহযোগিতা ছাড়া সমাজ উন্নয়ন সম্ভব নয়। তাই সংঘবদ্ধ মানুষের চিন্তা, চেতনা ও বুদ্ধির বিকাশকে কাজে লাগিয়ে সমাজবদ্ধ মানুষের কল্যাণের জন্য সৃজনশীল কিছু করতে পারলে সমৃদ্ধ হবে সমাজ উপকৃত হবে জাতি এবং আগামী প্রজন্ম। সমাজ গঠনের কাজে নিয়োজিত ব্যক্তিদের সাংগঠনিক প্রজ্ঞা সমন্বিত করে এলাকার সর্বস্তরের জনগণের অকুণ্ঠ সমর্থন ও সহযোগিতা নিয়ে রাষ্ট্রীয় বিধি বিধানের সাথে সংগতি রেখে ২০০৬ সালে এই ফাউন্ডেশনটি প্রতিষ্ঠিত হয়। যা একটি অরাজনৈতিক অলাভজনক স্বেচ্ছাসেবী সমাজকল্যাণমূলক সংগঠন হিসেবে কার্যক্রম পরিচালনা করবে ইনশাআল্লাহ।
         </p>
 
         {/* activites in about page */}
         <h1 className=" font-semibold tracking-wider text-green-700 mt-5 uppercase">
-          Our Activities
+        আমাদের কার্যক্রম
         </h1>
         <hr className=" bg-slate-300 my-3" />
         <div className=" relative flex justify-start items-center gap-5 ">
@@ -79,7 +65,7 @@ const About: React.FC = () => {
             >
               <p className={linkPointsClassNames}></p>
               <Link href={paths.activites.human_needs} scroll={true}>
-                Human needs (Food, Housing, Clothing)
+              অবাব (অন্ন, বাসস্থান, বস্ত্র)
               </Link>
             </motion.div>
             <motion.div
@@ -88,7 +74,7 @@ const About: React.FC = () => {
             >
               <p className={linkPointsClassNames}></p>
               <Link href={paths.activites.education} scroll={true}>
-                Education
+              শিক্ষা
               </Link>
             </motion.div>
             <motion.div
@@ -97,7 +83,7 @@ const About: React.FC = () => {
             >
               <p className={linkPointsClassNames}></p>
               <Link href={paths.activites.health} scroll={true}>
-                Health
+              চিকিৎসা
               </Link>
             </motion.div>
             <motion.div
@@ -106,7 +92,7 @@ const About: React.FC = () => {
             >
               <p className={linkPointsClassNames}></p>
               <Link href={paths.activites.training} scroll={true}>
-                Training
+              প্রশিক্ষণ
               </Link>
             </motion.div>
             <motion.div
@@ -115,7 +101,7 @@ const About: React.FC = () => {
             >
               <p className={linkPointsClassNames}></p>
               <Link href={paths.activites.the_culture} scroll={true}>
-                The Culture
+              সাংস্কৃতি
               </Link>
             </motion.div>
             <motion.div
@@ -124,7 +110,7 @@ const About: React.FC = () => {
             >
               <p className={linkPointsClassNames}></p>
               <Link href={paths.activites.awareness} scroll={true}>
-                Awareness
+                সচেতনতা 
               </Link>
             </motion.div>
           </motion.div>

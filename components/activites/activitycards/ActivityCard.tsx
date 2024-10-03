@@ -31,7 +31,7 @@ const ActivityCard = () => {
               <p className=" px-2 text-sm text-justify line-clamp-4">{data.text}</p>
             </section>
 
-            <Button variant={"link"} className=" w-full mt-5">Read More</Button>
+            <Button variant={"link"} className=" w-full mt-5">আরো পড়ুন</Button>
           </div>
         ))}
     </>

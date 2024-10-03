@@ -19,32 +19,32 @@ const SigninForm = () => {
     <form onClick={loginFormSubmite} action="" className=" flex flex-col gap-5">
       <div className=" flex flex-col justify-center items-center gap-4">
         <input
-          name="name"
-          type="text"
-          placeholder="Username or email"
+          name="নাম"
+          type="টেক্স"
+          placeholder="ইউজারের নাম অথবা ইমেইল"
           className={inputClassName}
         />
         <input
-          name="name"
-          type="password"
-          placeholder="Password"
+          name="নাম"
+          type="পাসওয়ার্ড"
+          placeholder="পাসওয়ার্ড"
           className={inputClassName}
         />
       </div>
       <div className=" flex justify-between items-center gap-5 text-sm  ">
         <div className=" flex justify-center items-center gap-1">
           <input type="checkbox" name="Remember me" id="" />
-          <span>Remember me</span>
+          <span>আমাকে মনে রেখো</span>
         </div>
         <Link href="#" className=" hover:underline ">
-          Lost your password?
+        আপনার পাসওয়ার্ড হারিয়েছেন?
         </Link>
       </div>
       <button
-        type="submit"
+        type="সাবমিট"
         className="rounded-md font-bold text-center bg-green-600 hover:bg-green-700 p-2 w-full text-white transition-all duration-300 ease-in-out"
       >
-        LOGIN
+        লগইন
       </button>
     </form>
   );

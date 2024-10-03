@@ -15,7 +15,7 @@ const Faq = () => {
   return (
     <div>
       <div className=" container mx-auto py-20 ">
-        <h1 className=" font-semibold uppercase text-green-700 ">FAQ</h1>
+        <h1 className=" font-semibold uppercase text-green-700 ">প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী</h1>
         <hr className=" bg-white mb-10 " />
         <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2">
           {activitesData &&

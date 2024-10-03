@@ -14,21 +14,21 @@ const Footer = async () => {
       <div className=" container mx-auto grid md:grid-cols-4 gap-10 ">
         {/* gallery */}
         <div>
-          <h4 className=" mb-5 text-2xl font-semibold">Photo Showcase</h4>
+          <h4 className=" mb-5 text-2xl font-semibold">ছবির শোকেস</h4>
           <ImageComp />
         </div>
 
         {/* elements */}
         <div>
-          <h4 className=" mb-5 text-2xl font-semibold">Elements</h4>
+          <h4 className=" mb-5 text-2xl font-semibold">উপাদান</h4>
           <ul className=" space-y-2 ">
             {[
-              { buttonText: "Out Events", link: "#" },
-              { buttonText: "Ask any Question", link: "#" },
-              { buttonText: "Refund Policy", link: "#" },
-              { buttonText: "Payment Options", link: "#" },
-              { buttonText: "Privacy Policy", link: "#" },
-              { buttonText: "Terms & Conditions", link: "#" },
+              { buttonText: "আমাদের ইভেন্ট", link: "#" },
+              { buttonText: "যেকোনো প্রশ্ন জিজ্ঞাসা করুন", link: "#" },
+              { buttonText: "ফেরত নীতি", link: "#" },
+              { buttonText: "পেমেন্ট অপশন", link: "#" },
+              { buttonText: "গোপনীয়তা নীতি", link: "#" },
+              { buttonText: "শর্তাবলী", link: "#" },
             ].map((item, index) => (
               <li key={index} className={liClassNames}>
                 <Link href={item.link}>* {item.buttonText}</Link>
@@ -39,15 +39,15 @@ const Footer = async () => {
 
         {/* Quick Links */}
         <div>
-          <h4 className=" mb-5 text-2xl font-semibold">Quick Links</h4>
+          <h4 className=" mb-5 text-2xl font-semibold">দ্রুত লিংক</h4>
 
           <ul className=" space-y-2 ">
             {[
-              { buttonText: "Activities", link: "#" },
-              { buttonText: "Volunteer", link: "#" },
-              { buttonText: "Campaigns", link: "#" },
-              { buttonText: "Contact", link: "#" },
-              { buttonText: "Register", link: "#" },
+              { buttonText: "কার্যক্রম", link: "#" },
+              { buttonText: "স্বেচ্ছাসেবক", link: "#" },
+              { buttonText: "প্রচারণা", link: "#" },
+              { buttonText: "যোগাযোগ", link: "#" },
+              { buttonText: "নিবন্ধন করুন", link: "#" },
             ].map((item, index) => (
               <li key={index} className={liClassNames}>
                 <Link href={item.link}>* {item.buttonText}</Link>
@@ -58,20 +58,20 @@ const Footer = async () => {
 
         {/* newsletter */}
         <div >
-          <h4 className="mb-5 text-2xl font-semibold">Scan Here</h4>
-          <Image src={qrCodeScanner} alt="..." className=" w-48 h-auto" />
+          <h4 className="mb-5 text-2xl font-semibold">স্ক্যান করুন</h4>
+          <Image src={qrCodeScanner} alt="..." className=" w-40 h-auto" />
         </div>
       </div>
 
       {/* copyright  */}
       <p className=" text-center mt-5 ">
-        Copyright © 2024 |{" "}
+        কপিরাইট © ২০২৪ |{" "}
         <a href="#" className=" text-green-500">
-          Nongor Foundation
+          নোঙর ফাউন্ডেশন
         </a>
       </p>
     </div>
   );
 };
 
-export default Footer;
+export default Footer

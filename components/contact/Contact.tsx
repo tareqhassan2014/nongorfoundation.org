@@ -9,7 +9,7 @@ const Contact = () => {
         <section>
           {/* map section */}
           <div className=" border rounded-lg p-2">
-            <h4 className=" text-xl font-semibold mb-2">Where we are ?</h4>
+            <h4 className=" text-xl font-semibold mb-2">আমরা যেখানে আছি ?</h4>
             <div className=" h-56 ">
               <iframe
                 className=" rounded-lg w-full min-h-full "
@@ -24,22 +24,22 @@ const Contact = () => {
 
           {/* contact address section */}
           <div className=" border rounded-lg p-2 flex flex-col gap-1 mt-2 ">
-            <h4 className=" text-xl font-semibold">Contact Details</h4>
+            <h4 className=" text-xl font-semibold">যোগাযোগের বিবরণ</h4>
             <hr className=" h-1 " />
             <div>
-              <h4 className=" font-semibold">Address</h4>
-              <p className=" text-sm ">Nongor Foundation,</p>
+              <h4 className=" font-semibold">ঠিকানা</h4>
+              <p className=" text-sm ">নোঙর ফাউন্ডেশন,</p>
               <p className=" text-sm ">
-                Nangla Bazar, Debhata-9430, Debhata, Satkhira.
+                নাংলা বাজার, দেবহাটা-৯৪৩০, দেবহাটা, সাতক্ষীরা।
               </p>
             </div>
 
             <div>
-              <h4 className=" font-semibold">Phone</h4>
-              <p className=" text-sm ">+88 01720-424 282, +88 01568-777 768</p>
+              <h4 className=" font-semibold">মোবাইল</h4>
+              <p className=" text-sm ">+৮৮ ০১৭২০ ৪২৪ ২৮২, +৮৮ ০১৫৬৮ ৭৭৭ ৭৬৮</p>
             </div>
             <div>
-              <h4 className=" font-semibold">Email</h4>
+              <h4 className=" font-semibold">ই-মেইল</h4>
               <p className=" text-sm ">nongorfoundation21@gmail.com</p>
             </div>
           </div>

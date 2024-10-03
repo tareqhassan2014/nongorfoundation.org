@@ -20,25 +20,25 @@ export const cardDatas: PropsType[] = [
   {
     id: 1,
     image: campaignImage1,
-    header: "Raise Funds",
-    text: "In the land of plenty, millions of boys and girls are going to bed hungry.",
+    header: "তহবিল বাড়ান",
+    text: " সমৃদ্ধ সমাজ বিনির্মাণে শক্তিশালী তহবিল গঠনে আপনার হাতকে প্রসারিত করুন.",
     logo: <FcDonate size={30} />,
-    button: "Donate"
+    button: "দান করুন"
   },
   {
     id: 2,
     image: campaignImage2,
-    header: "Become A Volunteer",
-    text: "For people effected by poverty or disaster, health is essential.",
+    header: "স্বেচ্ছাসেবক হয়ে উঠুন",
+    text: "সমাজ গঠনে সংঘবদ্ধ মানুষের চিন্তা, চেতনা ও বুদ্ধির বিকাশকে কাজে লাগাতে স্বেচ্ছাসেবক হয়ে পাশে থাকুন.",
     logo: <IoIosPeople size={30} />,
-    button: "Register"
+    button: "নিবন্ধন করুন"
   },
   {
     id: 3,
     image: campaignImage3,
-    header: "Give a One-Time Gift",
-    text: "Double your lifesaving impact with a gift today.",
+    header: "এককালীন উপহার দিন",
+    text: "আজ উপহার দিয়ে আপনার জীবন রক্ষাকারী প্রভাবকে দ্বিগুণ করুন।",
     logo: <AiFillGift size={30}/>,
-    button: "Gift"
+    button: "উপহার"
   },
 ];

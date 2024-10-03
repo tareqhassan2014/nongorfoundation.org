@@ -6,49 +6,49 @@ interface FAQDataType {
 
 export const FAQData: FAQDataType[] = [
   {
-    question: "What is the nature of your organization?",
+    question: "আপনাদের সংগঠনটি কোন প্রকৃতির?",
     answer: [
-      "A non-political, non-profit and voluntary social welfare organization.",
+      "একটি অরাজনৈতিক, অলাভজনক এবং স্বেচ্ছাসেবী সমাজকল্যাণমূলক সংগঠন।",
     ],
   },
   {
-    question: "What are your goals and objectives?",
+    question: "আপনাদের লক্ষ্য ও উদ্দেশ্য কি?",
     answer: [
-      "Implementation of welfare work through mutual cooperation and creation of prosperous society in the service of humanity.",
+      "পারস্পারিক সহযোগিতার মাধ্যমে কল্যাণধর্মী কার্য বাস্তবায়ন ও মানবতার সেবায় সমৃদ্ধ সমাজ গঠন।",
     ],
   },
   {
-    question: "What are your Arena limits?",
+    question: "আপনাদের কর্মক্ষেত্রের সীমা কতদূর?",
     answer: [
-      "It is hoped to conduct activities in the entire upazila and later in the entire Satkhira district. Subsequently, its activities may be extended to any other district subject to the approval of the concerned authorities.",
+      "সমগ্র সাতক্ষীরা জেলায় কার্যক্রম পরিচালনা করা। পরবর্তীতে নিবন্ধন কর্তৃপক্ষের অনুমোদন সাপেক্ষে অন্য অনুমোদিত জেলাসমূহে এর কার্যক্রম সম্প্রসারণ করা যাবে।",
     ],
   },
   {
-    question: "What are your Slogan?",
-    answer: ["Eternal conviction in building a prosperous society."],
+    question: "আপনাদের স্লোগান কি?",
+    answer: ["সমৃদ্ধ সমাজ বিনির্মাণে অবিরাম প্রত্যয়"],
   },
   {
-    question: "What are your Vision?",
+    question: "আপনাদের ভিশন কি?",
     answer: [
-      "Establishing non-discrimination, caste, class and gender equality-based society which will be environment dependent.",
+      "বৈষম্যহীন, বর্ণ, শ্রেনী ও জেন্ডার সমতা ভিত্তিক সমাজ প্রতিষ্ঠা যা হবে পরিবেশ নির্ভর।",
     ],
   },
   {
-    question: "What is your procedure?",
+    question: "আপনাদের কার্মধারা কি?",
     answer: [
-      "Our procedure: According to the Bangladesh Social Policy, 6 (six) measures will be taken to ensure fairness and prosperity in the social system.",
-      "Procedure-1 : To play a role in building a prosperous decay-free society to bring about the desired change in the socio-economic condition. Ensuring balanced prosperity through multifaceted social activities especially the activities of the organization regarding basic needs.",
-      "Procedure-2: Education is the root of all awareness. To assist in timely and quality basic education for all. To this point, to make education people-oriented and universal, to conduct activities at every level of education.",
-      "Procedure-3: Healthy life can ensure calm mind. To make constructive efforts for the implementation of timely and effective health services in rural areas. To co-operate to ensure the health rights of marginalized people.",
-      "Procedure-4: If you are skilled, you can make a livelihood. To create a self-reliant, happy and prosperous decay-free society to bring about the desired change in the socio-economic condition of the area.",
-      "Procedure-5: Culture is the mirror of society. To play a relentless role in establishing tasteful culture and developing healthy culture through modern and up-to-date changes in social culture.",
-      "Procedure-6 : Prosperity of the society in the awareness of the citizens. To formulate and implement far-reaching plans on contemporary issues with the aim of creating mutual awareness among the socialized people to bring dynamism to the socio-economic condition.",
+      "বাংলাদেশ সামাজিক নীতিমালা অনুসারে সামাজিক ব্যবস্থায় সুষ্ঠুতা ও সমৃদ্ধি নিশ্চিত করার জন্য ৬(ছয়) টি কর্মধারা অবলম্বন করা হবে।",
+      "কর্মধারা-১: অবাব (অন্ন, বাসস্থান, বস্ত্র)- আর্থ-সামাজিক অবস্থার কাঙ্ক্ষিত পরিবর্তন সাধনের জন্য সমৃদ্ধশালী অবক্ষয়মুক্ত সমাজ গঠনে ভূমিকা রাখা। বহুমূখী সামাজিক কার্যক্রম বিশেষ করে মৌলিক চাহিদার (অন্ন, বাসস্থান, বস্ত্র) বিষয়ে প্রতিষ্ঠানের কার্যক্রমের মাধ্যমে ভারসাম্যপূর্ণ সমৃদ্ধি নিশ্চিত করণ।",
+      "কর্মধারা-২: শিক্ষা- শিক্ষা সকল সচেতনতার মূল। সবার জন্য সময়োপযোগী ও মানসম্মত মৌলিক শিক্ষাগ্রহণে সহায়তা করা। এ জন্য শিক্ষাকে গণমুখী ও সর্বজনীন করার মাধ্যমে শিক্ষার প্রতিটি স্তরে কার্যক্রম পরিচালনা করা।",
+      "কর্মধারা-৩: চিকিৎসা- সুস্থ জীবন প্রশান্ত মন। গ্রামীণ জনপদে সময়োপযোগী কার্যকারী স্বাস্থ্যসেবা বাস্তবায়নে গঠনমূলক প্রচেষ্টা চালানো। প্রান্তিক মানুষের স্বাস্থ্য অধিকার নিশ্চিত করতে সর্বাত্মক সহযোগিতা করা।",
+      "কর্মধারা-৪: প্রশিক্ষণ- দক্ষ হলে জীবিকা মেলে। এলাকার আর্থ-সামাজিক অবস্থার কাঙ্ক্ষিত পরিবর্তন সাধনের জন্য আত্মনির্ভরশীল সুখী ও সমৃদ্ধশালি অবক্ষয়মুক্ত সমাজ গঠন করা। এজন্য পিছিয়ে পড়া সমাজের অনগ্রসর শিক্ষার্থী, নারী-পুরুষের আর্থ-সামাজিক অবস্থার ইতিবাচক পরিবর্তনে প্রশিক্ষণ মূলক কর্মসূচি বা প্রকল্প প্রণয়ন করা।",
+      "কর্মধারা-৫: সাংস্কৃতি- সংস্কৃতি সমাজের দর্পণ। সামাজিক সাংস্কৃতিতে আধুনিক ও যুগপোযোগী পরিবর্তনের মাধ্যমে রুচিশীল সংস্কৃতি প্রতিষ্ঠা ও সুস্থ সংস্কৃতির ক্রমবিকাশে নিরালস ভূমিকা রাখা।",
+      "কর্মধারা-৬: সচেতনতা- নাগরিকের সচেতনতায় সমাজের সমৃদ্ধি। আর্থ-সামাজিক অবস্থার গতিশীলতা আনয়ন সমাজবদ্ধ মানুষের মাঝে পারস্পারিক সচেতনতা সৃষ্টির লক্ষ্যে সমসাময়িক বিষয়ে সুদূরপ্রসারি পরিকল্পনা প্রনয়ণ ও বাস্তবায়ন করা।",
     ],
   },
   {
-    question: "How can I contact you?",
+    question: "আপনাদের সাথে যোগাযোগ করতে চাই",
     answer: [
-      "Nongor foundation, Nangla Bazar, Debhata-9430, Debhata, Satkhira, Phone: 01720424282, 01568777768",
+      "নোঙর ফাউন্ডেশন, নাংলা বাজার, দেবহাটা-৯৪৩০, দেবহাটা, সাতক্ষীরা। মোবাইল: +৮৮০১৭২০৪২৪২৮২, +৮৮০১৫৬৮৭৭৭৭৬৮",
     ],
     location: "https://maps.app.goo.gl/eRRjPBov6VsydeuA8",
   },

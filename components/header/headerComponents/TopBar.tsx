@@ -17,7 +17,7 @@ const TopBar: React.FC = () => {
   return (
     <div className=" bg-green-950 w-full flex justify-between items-center gap-2 px-7 py-1">
       <div className="flex justify-start items-center gap-2 ">
-        <p className=" text-slate-300 ">Connect with us: </p>
+        <p className=" text-slate-300 ">আমাদের সাথে সংযোগ করুন: </p>
         {icons.map((item, index) => (
           <Link key={index} href={item.link} title={item.link}>
             {item.icon}
@@ -31,7 +31,7 @@ const TopBar: React.FC = () => {
         >
           <HiLocationMarker size={size} className={classNameforIcon} />
           <span className={classNameforText}>
-            Debhata, Satkhira, Bangladesh.
+            দেবহাটা, সাতক্ষীরা, বাংলাদেশ
           </span>
         </Link>
         <Link

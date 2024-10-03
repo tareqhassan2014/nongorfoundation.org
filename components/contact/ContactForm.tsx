@@ -29,9 +29,9 @@ const formSchema = z.object({
 });
 
 const formFieldData = [
-  { fieldName: 'name', label: "Your Name", placeholder: "Latent Talent" },
-  { fieldName: 'email', label: "Email", placeholder: "example@gmail.com" },
-  { fieldName: 'number', label: "Phone Number", placeholder: "Phone Number" },
+  { fieldName: 'name', label: "নাম", placeholder: "লেটেন্ট ট্যালেন্ট" },
+  { fieldName: 'email', label: "ই-মেইল", placeholder: "example@gmail.com" },
+  { fieldName: 'number', label: "মোবাইল নম্বর", placeholder: "মোবাইল নম্বর" },
 ];
 
 
@@ -68,7 +68,7 @@ const ContactForm = () => {
   return (
     <div className=" border p-2 rounded-md">
       <h1 className=" text-xl font-semibold">
-        Feel free to contact us
+      নির্দ্বিধায় আমাদের সাথে যোগাযোগ করুন
       </h1>
       <hr className=" h-1 my-5" />
 
@@ -106,11 +106,11 @@ const ContactForm = () => {
             render={({ field }) => (
               <FormItem className=" flex flex-col">
                 <FormLabel className=" text-sm text-slate-500">
-                  Message
+                বার্তা
                 </FormLabel>
                 <FormControl>
                   <textarea
-                    placeholder="Type your message here."
+                    placeholder="এখানে আপনার বার্তা লিখুন."
                     rows={5}
                     {...field}
                     className=" text-sm border rounded-md p-2 focus-visible:outline-none"
@@ -126,7 +126,7 @@ const ContactForm = () => {
               type="submit"
               className="py-1 px-3 text-white bg-green-700 rounded-md "
             >
-              Sent
+              পাঠিয়ে দিন
             </button>
           </div>
         </form>
