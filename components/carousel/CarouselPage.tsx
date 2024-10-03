@@ -70,7 +70,7 @@ const CarouselPage: React.FC = () => {
                     variants={context.childrenAnimation}
                     className="cursor-pointer py-2 px-5 text-white rounded-md bg-green-800 hover:bg-green-700 "
                   >
-                    <Link href={paths.donate} >Donate Now</Link>
+                    <Link href={paths.donate} >দান করুন</Link>
                   </motion.p>
                 </motion.div>
               </div>

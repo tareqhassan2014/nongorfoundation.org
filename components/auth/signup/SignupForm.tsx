@@ -12,25 +12,25 @@ const SignupForm = () => {
         <input
           name="name"
           type="text"
-          placeholder="Username"
+          placeholder="ইউজার"
           className={inputClassName}
         />
         <input
           name="email"
           type="email"
-          placeholder="email"
+          placeholder="ই-মেইল"
           className={inputClassName}
         />
         <input
           name="name"
           type="password"
-          placeholder="Password"
+          placeholder="পাসওয়ার্ড"
           className={inputClassName}
         />
         <input
           name="name"
           type="password"
-          placeholder="Confirm Password"
+          placeholder="পাসওয়ার্ড নিশ্চিত করুন"
           className={inputClassName}
         />
       </div>
@@ -38,7 +38,7 @@ const SignupForm = () => {
         type="submit"
         className=" rounded-md font-bold text-center bg-green-600 hover:bg-green-700 p-2 w-full text-white transition-all duration-300 ease-in-out"
       >
-        SIGN UP
+        সাইন আপ
       </button>
     </form>
   );

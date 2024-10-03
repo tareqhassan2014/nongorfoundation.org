@@ -12,19 +12,19 @@ const Signin = () => {
     <div className=" bg-orange-50 min-h-screen flex justify-center items-center ">
       <div className=" rounded-md bg-white py-16 px-5 my-16 flex flex-col gap-10 xl:w-[25vw] lg:w-[30vw] md:w-[40vw] sm:w-[50vw] w-full">
         <h1 className=" text-center text-2xl font-bold underline underline-offset-8">
-          Login Here
+        এখানে লগইন করুন
         </h1>
         <SigninForm />
         <div className=" flex justify-center items-center gap-1">
-          <p>Not a member yet?</p>
+          <p>এখনও সদস্য নন?</p>
           <Link href={paths.auth.signup} className=" text-orange-400 ">
-            Register now
+            নিবন্ধন করুন
           </Link>
         </div>
 
         {/* auto login icons */}
         <div>
-          <p className=" w-full text-center ">OR</p>
+          <p className=" w-full text-center ">অথবা</p>
           <div className=" flex flex-col justify-center items-center gap-1 mt-5">
             <form
               action={async () => {
@@ -34,7 +34,7 @@ const Signin = () => {
             >
               <Button variant={"outline"} className=" w-full ">
                 <FcGoogle size={20} />
-                <span className=" ml-5 ">Login with Google</span>
+                <span className=" ml-5 ">গুগল দিয়ে লগইন করুন</span>
               </Button>
               {/* <Button variant={"outline"} className=" w-full ">
               <MdFacebook size={30} fill="blue" />

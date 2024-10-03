@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       <Footstep>
-        <Link href={paths.home} className=" cursor-pointer hover:text-green-800 ">Home</Link> / <span className=" text-green-800 ">FAQ</span>
+        <Link href={paths.home} className=" cursor-pointer hover:text-green-800 ">হোম</Link> / <span className=" text-green-800 ">প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী</span>
       </Footstep>
       <Faq />
     </div>

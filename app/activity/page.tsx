@@ -12,10 +12,11 @@ const page = () => {
           href={paths.home}
           className=" cursor-pointer hover:text-green-800 "
         >
-          Home
+          হোম
 
         </Link>{" "}
-        / <span className=" text-green-800 ">Activities</span>
+        / <span className=" text-green-800 ">
+        কার্যক্রম</span>
       </Footstep>
       <Activites />
     </div>

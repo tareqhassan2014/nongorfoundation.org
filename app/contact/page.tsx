@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <Footstep>
-        <Link href={paths.home} className=" cursor-pointer hover:text-green-800 ">Home</Link> / <span className=" text-green-800 ">Contact</span>
+        <Link href={paths.home} className=" cursor-pointer hover:text-green-800 ">হোম</Link> / <span className=" text-green-800 ">যোগাযোগ</span>
       </Footstep>
       <Contact />
     </>

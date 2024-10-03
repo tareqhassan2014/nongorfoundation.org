@@ -7,87 +7,64 @@ const Structure = () => {
   return (
     <>
       <Footstep>
-        <Link href={paths.home} className=" cursor-pointer hover:text-green-800 ">Home</Link> / <span className=" text-green-800 ">Structure</span>
+        <Link href={paths.home} className=" cursor-pointer hover:text-green-800 ">হোম</Link> / <span className=" text-green-800 ">সংস্থার কাঠামো</span>
       </Footstep>
       <div className=" py-20 ">
         <h2 className="text-center py-3 text-2xl font-semibold">
-          Structure of The Organization
+          সংস্থার সাংগঠনিক কাঠামো 
         </h2>
         <div className="max-w-6xl mx-auto px-3 py-10">
           <p>
-            Nongor Foundation is a private voluntary organization and will have
-            three councils in its organizational structure for the smooth and fair
-            management of its functions:
+          অত্র ফাউন্ডেশন একটি বেসরকারী স্বেচ্ছাসেবী প্রতিষ্ঠান এবং ইহার কার্যাবলী সুষ্ঠু ও সুন্দর ভাবে পরিচালনার জন্য এর সাংগঠনিক কাঠামোতে তিনটি পরিষদ থাকবে।
           </p>
           <ol className="grid grid-cols-1 list-[upper-roman] list-inside pt-2 font-bold text-green-700">
-            <li>General Council,</li>
-            <li>Executive Council, and</li>
-            <li>Advisory Council</li>
+            <li>সাধারণ পরিষদ,</li>
+            <li>কার্যনির্বাহী পরিষদ , এবং</li>
+            <li>উপদেষ্টা পরিষদ</li>
           </ol>
           <ol className="list-[upper-roman] list-inside pt-8">
-            <li className="font-bold text-green-700 text-lg">General Council:</li>
+            <li className="font-bold text-green-700 text-lg">সাধারণ পরিষদ:</li>
             <p>
-              This council will consist of general members and life members. This
-              council will approve the annual budget, review the annual audit
-              report, amend the constitution, and resolve other complex issues.
-              The session of this council will be held once a year. But it can be
-              done more than once for special needs.
+            সাধারণ সদস্য ও আজীবন সদস্যের সমন্বয়ে এ পরিষদ গঠিত হবে। এই পরিষদ বার্ষিক বাজেট অনুমোদন, বার্ষিক অডিট রিপোর্ট পর্যালোচনা, গঠনতন্ত্র সংশোধন ও অন্যান্য জটিল বিষয়াদির সমাধান করবে। এই পরিষদের অধিবেশন বৎসরে একবার অনুষ্ঠিত হবে। তবে তা বিশেষ প্রয়োজনে একাধিকবার করা যেতে পরে।
             </p>
             <ol className="list-[upper-number] list-inside pt-2 pl-3 font-semibold">
               <li>
-                The number of members of the General Assembly shall be a minimum
-                of 23 members. The number of members can be increased if
-                necessary.
+              সাধারণ পরিষদের সদস্য সংখ্যা হবে সর্বনিম্ম ২৩ জন। প্রয়োজনে সদস্য সংখ্যা বাড়তে পারে।
               </li>
-              <li> There should be women members in the General Assembly.</li>
+              <li> সাধারণ পরিষদে মহিলা সদস্য থাকতে হবে। </li>
               <li>
-                Members of the General Assembly must be of sound mind and at least
-                18 years of age. Members must have experience in community
-                developmentand an interest in serving on the highest council in
-                solidarity with the philosophy of the organization.
+              সাধারণ পরিষদের সদস্যদের সুস্থ মস্তিস্ক সম্পন্ন কমপক্ষে ১৮ বছর বয়সের অধিকারী হতে হবে। সদস্যদের অবশ্যই সমাজ উন্নয়নে অভিজ্ঞতা ও এই প্রতিষ্ঠানের দর্শনের প্রতি একাত্ম থেকে সর্বোচ্চ পরিষদে কাজ করার আগ্রহ থাকতে হবে।
               </li>
             </ol>
             <li className="pt-8 font-bold text-green-700 text-lg">
-              Executive Council:
+            কার্যনির্বাহী পরিষদ:
             </li>
             <p>
-              The Executive Council of the Foundation will consist of 07 (seven)
-              persons elected or nominated from among the members of the General
-              Assembly. The elected members will serve as executive members for 02
-              (two) years.The organizational structure of the Executive Council is
-              as follows:
+            সাধারণ পরিষদ এর সদস্যগণের মধ্যে থেকে নির্বাচিত অথবা মনোনিত ০৭(সাত) জন ব্যক্তি নিয়ে ফাউন্ডেশনের কার্যনির্বাহী পরিষদ থাকবে। নির্বাচিত সদস্যরা ০২(দুই) বছরের জন্য কার্যনির্বাহী সদস্যের দায়িত্ব পালন করবেন।
             </p>
-            <p>Sequential designation comments-</p>
+            <p>কার্যনির্বাহী পরিষদের সাংগঠনিক কাঠামো নিম্নরূপঃ</p>
             <ol className="list-[upper-number] list-inside pt-2 pl-3 font-semibold">
-              <li>president</li>
-              <li>Vice-Presidents</li>
-              <li>General Secretary</li>
-              <li>Joint General Secretary</li>
-              <li>Treasurer</li>
-              <li>executive members:</li>
+              <li>সভাপতি</li>
+              <li>সহ-সভাপতি</li>
+              <li>সাধারণ সম্পাদক</li>
+              <li>যুগ্ম সাধারণ সম্পাদক </li>
+              <li>কোষাধ্যক্ষ </li>
+              <li>কার্যনির্বাহী সদস্য ১</li>
+              <li>কার্যনির্বাহী সদস্য ২</li>
               <ol className="list-disc list-inside pt-2 pl-3">
                 <li>
-                  The Executive Council shall be elected for 2 years by voting or
-                  nomination of the members of the General Council.
+                কার্যনির্বাহী পরিষদ সাধারণ পরিষদের সদস্যদের ভোটে অথবা মনোনয়নে ২ বছরের জন্য নির্বাচিত হবে।
                 </li>
                 <li>
-                  The newly elected executive council shall assume responsibility
-                  within 15 (fifteen) days after the election.
+                নবনির্বাচিত কার্যনির্বাহী পরিষদ নির্বাচনের পর ১৫ (পনের) দিনের মধ্যে দায়িত্বভার বুঝে নিবেন।
                 </li>
               </ol>
             </ol>
             <li className="pt-8 font-bold text-green-700 text-lg">
-              Advisory Council:
+            উপদেষ্টা পরিষদ:
             </li>
             <p>
-              This council of the foundation will have an advisory council
-              consisting of 07 (seven) members. Advisors will provide sound advice
-              and support for successfully implementing various developmental
-              activities undertaken by the organization. An advisory council will
-              be constituted of educationists (past/present), doctors, bankers,
-              imams/alems, government officials (past/present), eminent
-              businessmen, lawyers, and ex-members/chairmen/dignitaries of the
-              respective areas.
+            ফাউন্ডেশনের এই পরিষদে ০৭ (সাত) সদস্য বিশিষ্ট একটি উপদেষ্টা পরিষদ থাকবে। উপদেষ্টাগণ সংগঠন কর্তৃক গৃহীত বিভিন্ন উন্নয়নমূলক কর্মকান্ড সফলভাবে বাস্তবায়নের জন্য সুচিন্তিত পরামর্শ ও সহযোগিতা প্রদান করবেন। উলেখ্য সংশ্লিষ্ঠ এলাকার শিক্ষাবিদ (সাবেক/বর্তমান), ডাক্তার, ব্যাংকার, ইমাম/আলেম, সরকারি কর্মকর্তা (সাবেক/বর্তমান), বিশিষ্ঠ ব্যাবসায়ী, আইনজীবি ও প্রাক্তন মেম্বর/ চেয়ারম্যান/ গন্যমান্য ব্যক্তিদের নিয়ে উপদেষ্টা পরিষদ গঠিত হবে। 
             </p>
           </ol>
         </div>

@@ -28,10 +28,10 @@ const AuthComponent = async (
         } justify-center items-center `}
       >
         <li className={navItemClassNames}>
-          <Link href={paths.auth.signin}>Log in</Link>
+          <Link href={paths.auth.signin}>লগইন</Link>
         </li>
         <li className={navItemClassNames}>
-          <Link href={paths.auth.signup}>Sign up</Link>
+          <Link href={paths.auth.signup}>সাইন আপ</Link>
         </li>
       </ul>
     );

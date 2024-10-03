@@ -9,37 +9,37 @@ export const activitesData = [
     {
         id: 1,
         img: activityImage1,
-        header: "Human needs (Food, Housing, Clothing)",
-        text: "To play a role in building a prosperous decay-free society to bring about the desired change in the socio-economic condition. Ensuring balanced prosperity through multifaceted social activities especially the activities of the organization regarding basic needs"
+        header: "অবাব (অন্ন, বাসস্থান, বস্ত্র)",
+        text: "আর্থ-সামাজিক অবস্থার কাঙ্ক্ষিত পরিবর্তন সাধনের জন্য সমৃদ্ধশালী অবক্ষয়মুক্ত সমাজ গঠনে ভূমিকা রাখা। বহুমূখী সামাজিক কার্যক্রম বিশেষ করে মৌলিক চাহিদার (অন্ন, বাসস্থান, বস্ত্র) বিষয়ে প্রতিষ্ঠানের কার্যক্রমের মাধ্যমে ভারসাম্যপূর্ণ সমৃদ্ধি নিশ্চিত করণ। "
     },
     {
         id: 2,
         img: activityImage2,
-        header: "Education",
-        text: "Education is the root of all awareness. To assist in timely and quality basic education for all. To this point, to make education people-oriented and universal, to conduct activities at every level of education"
+        header: "শিক্ষা",
+        text: "শিক্ষা সকল সচেতনতার মূল। সবার জন্য সময়োপযোগী ও মানসম্মত মৌলিক শিক্ষাগ্রহণে সহায়তা করা। এ জন্য শিক্ষাকে গণমুখী ও সর্বজনীন করার মাধ্যমে শিক্ষার প্রতিটি স্তরে কার্যক্রম পরিচালনা করা। "
     },
     {
         id: 3,
         img: activityImage3,
-        header: "Health",
-        text: "A healthy life can ensure a calm mind. To make constructive efforts for the implementation of timely and effective health services in rural areas. To cooperate to ensure the health rights of marginalized people"
+        header: "চিকিৎসা",
+        text: "সুস্থ জীবন প্রশান্ত মন। গ্রামীণ জনপদে সময়োপযোগী কার্যকারী স্বাস্থ্যসেবা বাস্তবায়নে গঠনমূলক প্রচেষ্টা চালানো। প্রান্তিক মানুষের স্বাস্থ্য অধিকার নিশ্চিত করতে সর্বাত্মক সহযোগিতা করা। "
     },
     {
         id: 4,
         img: activityImage4,
-        header: "Training",
-        text: "If you are skilled, you can make a livelihood. To create a self-reliant, happy, and prosperous decay-free society to bring about the desired change in the socio-economic condition of the area"
+        header: "প্রশিক্ষণ",
+        text: "দক্ষ হলে জীবিকা মেলে। এলাকার আর্থ-সামাজিক অবস্থার কাঙ্ক্ষিত পরিবর্তন সাধনের জন্য আত্মনির্ভরশীল সুখী ও সমৃদ্ধশালি অবক্ষয়মুক্ত সমাজ গঠন করা। এজন্য পিছিয়ে পড়া সমাজের অনগ্রসর শিক্ষার্থী, নারী-পুরুষের আর্থ-সামাজিক অবস্থার ইতিবাচক পরিবর্তনে প্রশিক্ষণ মূলক কর্মসূচি বা প্রকল্প প্রণয়ন করা।"
     },
     {
         id: 5,
         img: activityImage6,
-        header: "The Culture",
-        text: "Culture is the mirror of society. To play a relentless role in establishing tasteful culture and developing healthy culture through modern and up-to-date changes in social culture"
+        header: "সাংস্কৃতি",
+        text: "সংস্কৃতি সমাজের দর্পণ। সামাজিক সাংস্কৃতিতে আধুনিক ও যুগপোযোগী পরিবর্তনের মাধ্যমে রুচিশীল সংস্কৃতি প্রতিষ্ঠা ও সুস্থ সংস্কৃতির ক্রমবিকাশে নিরালস ভূমিকা রাখা।"
     },
     {
         id: 6,
         img: activityImage5,
-        header: "Awareness",
-        text: "The prosperity of the society in the awareness of the citizens. To formulate and implement far-reaching plans on contemporary issues to create mutual awareness among the socialized people to bring dynamism to the socio-economic condition"
+        header: "সচেতনতা",
+        text: "নাগরিকের সচেতনতায় সমাজের সমৃদ্ধি। আর্থ-সামাজিক অবস্থার গতিশীলতা আনয়ন সমাজবদ্ধ মানুষের মাঝে পারস্পারিক সচেতনতা সৃষ্টির লক্ষ্যে সমসাময়িক বিষয়ে সুদূরপ্রসারি পরিকল্পনা প্রনয়ণ ও বাস্তবায়ন করা।"
     }
 ]

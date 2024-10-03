@@ -43,56 +43,56 @@ const NavBar: React.FC = () => {
           <div className=" relative flex justify-between items-center text-sm h-14 bg-green-50">
             <ul className=" flex justify-start items-center">
               <li className={navItemClassNames}>
-                <Link href={paths.home}>Home</Link>
+                <Link href={paths.home}>হোম</Link>
               </li>
               <li className={navItemClassNames}>
                 <DropdownMenu modal={false}>
                   <DropdownMenuTrigger asChild>
                     <div className=" flex justify-between items-center gap-2">
-                      <span>Information</span>
+                      <span>তথ্য</span>
                       <ChevronDown className=" h-4 w-4 " />
                     </div>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="w-56">
                     <DropdownMenuSub>
-                      <DropdownMenuSubTrigger>About</DropdownMenuSubTrigger>
+                      <DropdownMenuSubTrigger>আমাদের সম্পর্কে</DropdownMenuSubTrigger>
                       <DropdownMenuPortal>
                         <DropdownMenuSubContent>
                           <Link href={paths.information.introduction}>
-                            <DropdownMenuItem>Introduction</DropdownMenuItem>
+                            <DropdownMenuItem>ভূমিকা</DropdownMenuItem>
                           </Link>
                           <Link
                             href={paths.information.nature_of_the_organization}
                           >
                             <DropdownMenuItem>
-                              Nature of the organization
+                            সংগঠনের প্রকৃতি 
                             </DropdownMenuItem>
                           </Link>
                           <Link href={paths.information.arena_limits}>
-                            <DropdownMenuItem>Arena limits</DropdownMenuItem>
+                            <DropdownMenuItem>কর্মক্ষেত্রের সীমা</DropdownMenuItem>
                           </Link>
                           <Link href={paths.information.aims_and_objectives}>
                             <DropdownMenuItem>
-                              Aims and Objectives
+                            লক্ষ্য ও উদ্দেশ্য
                             </DropdownMenuItem>
                           </Link>
                           <Link href={paths.information.slogan}>
-                            <DropdownMenuItem>Slogan</DropdownMenuItem>
+                            <DropdownMenuItem>স্লোগান</DropdownMenuItem>
                           </Link>
                           <Link href={paths.information.vision}>
-                            <DropdownMenuItem>Vision</DropdownMenuItem>
+                            <DropdownMenuItem>ভিশন</DropdownMenuItem>
                           </Link>
                         </DropdownMenuSubContent>
                       </DropdownMenuPortal>
                     </DropdownMenuSub>
                     <Link href={paths.information.structure}>
-                      <DropdownMenuItem>Structure</DropdownMenuItem>
+                      <DropdownMenuItem>সংস্থার কাঠামো</DropdownMenuItem>
                     </Link>
                     <Link href={paths.information.team}>
-                      <DropdownMenuItem>Team</DropdownMenuItem>
+                      <DropdownMenuItem>টিম</DropdownMenuItem>
                     </Link>
                     <Link href={paths.information.faq}>
-                      <DropdownMenuItem>FAQ</DropdownMenuItem>
+                      <DropdownMenuItem>প্রায়শই জিজ্ঞাসিত প্রশ্নাবলী</DropdownMenuItem>
                     </Link>
                   </DropdownMenuContent>
                 </DropdownMenu>
@@ -102,44 +102,44 @@ const NavBar: React.FC = () => {
                 <DropdownMenu modal={false}>
                   <DropdownMenuTrigger asChild>
                     <div className=" flex justify-between items-center gap-2">
-                      <span>Activities</span>
+                      <span>কার্যক্রম</span>
                       <ChevronDown className=" h-4 w-4 " />
                     </div>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="w-56">
                     <Link href={paths.activites.human_needs} scroll={true}>
                       <DropdownMenuItem>
-                        Human needs (Food, Housing, Clothing)
+                      অবাব (অন্ন, বাসস্থান, বস্ত্র)
                       </DropdownMenuItem>
                     </Link>
                     <Link href={paths.activites.education} scroll={true}>
-                      <DropdownMenuItem>Education</DropdownMenuItem>
+                      <DropdownMenuItem>শিক্ষা</DropdownMenuItem>
                     </Link>
                     <Link href={paths.activites.health} scroll={true}>
-                      <DropdownMenuItem>Health</DropdownMenuItem>
+                      <DropdownMenuItem>চিকিৎসা</DropdownMenuItem>
                     </Link>
                     <Link href={paths.activites.training} scroll={true}>
-                      <DropdownMenuItem>Training</DropdownMenuItem>
+                      <DropdownMenuItem>প্রশিক্ষণ</DropdownMenuItem>
                     </Link>
                     <Link href={paths.activites.the_culture} scroll={true}>
-                      <DropdownMenuItem>The Culture</DropdownMenuItem>
+                      <DropdownMenuItem>সাংস্কৃতি</DropdownMenuItem>
                     </Link>
                     <Link href={paths.activites.awareness} scroll={true}>
-                      <DropdownMenuItem>Awareness</DropdownMenuItem>
+                      <DropdownMenuItem>সচেতনতা</DropdownMenuItem>
                     </Link>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </li>
 
               <li className={navItemClassNames}>
-                <Link href={paths.campaign}>Campaign</Link>
+                <Link href={paths.campaign}>প্রচারণা</Link>
               </li>
 
               <li className={navItemClassNames}>
-                <Link href={paths.news}>News</Link>
+                <Link href={paths.news}>সংবাদ</Link>
               </li>
               <li className={navItemClassNames}>
-                <Link href={paths.contact}>Contact</Link>
+                <Link href={paths.contact}>যোগাযোগ</Link>
               </li>
             </ul>
             <ul className=" flex justify-start items-center gap-2">
@@ -147,27 +147,27 @@ const NavBar: React.FC = () => {
                 <DropdownMenu modal={false}>
                   <DropdownMenuTrigger asChild>
                     <p className=" cursor-pointer py-2 px-5 text-white rounded-md bg-green-800 hover:bg-green-700 transition-all duration-300 ease-in">
-                      Register Now
+                    নিবন্ধন করুন
                     </p>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="w-56">
                     <Link href={paths.registration.volunteer}>
-                      <DropdownMenuItem>Volunteer</DropdownMenuItem>
+                      <DropdownMenuItem>স্বেচ্ছাসেবক</DropdownMenuItem>
                     </Link>
                     <Link href={paths.registration.ordinary_member}>
-                      <DropdownMenuItem>Ordinary member</DropdownMenuItem>
+                      <DropdownMenuItem>সাধারণ সদস্য</DropdownMenuItem>
                     </Link>
                     <Link href={paths.registration.lifetime_member}>
-                      <DropdownMenuItem>Lifetime Member</DropdownMenuItem>
+                      <DropdownMenuItem>আজীবন সদস্য</DropdownMenuItem>
                     </Link>
                     <Link href={paths.registration.donor_member}>
-                      <DropdownMenuItem>Donor Member</DropdownMenuItem>
+                      <DropdownMenuItem>দাতা সদস্য</DropdownMenuItem>
                     </Link>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </li>
               <li className=" cursor-pointer py-2 px-5 text-white rounded-md bg-green-800 hover:bg-green-700 transition-all duration-300 ease-in">
-                <Link href={paths.donate}>Donate Now</Link>
+                <Link href={paths.donate}>দান করুন</Link>
               </li>
 
               <SearchButton />

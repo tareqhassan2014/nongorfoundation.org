@@ -40,7 +40,7 @@ const NewsCardsCom: React.FC = () => {
                   <Dialog>
                     <DialogTrigger asChild>
                       <p className=" cursor-pointer hover:underline text-green-700 my-2 hover:scale-110 transition-all duration-300 ease-in text-center">
-                        Read More
+                        আরো পড়ুন
                       </p>
                     </DialogTrigger>
                     <DialogContent className=" overflow-y-scroll h-[90vh] ">
@@ -62,13 +62,13 @@ const NewsCardsCom: React.FC = () => {
                     </DialogContent>
                   </Dialog>
                 </div>
-                <div className=" text-slate-400 flex items-center justify-between w-full bg-slate-50 rounded-md p-1">
+                {/* <div className=" text-slate-400 flex items-center justify-between w-full bg-slate-50 rounded-md p-1">
                   <h4>By: {item.name}</h4>
                   <p className=" font-bold blur-sm">|</p>
                   <div className=" flex items-center gap-2">
                     <FcLike /> <span>{item.rate}</span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

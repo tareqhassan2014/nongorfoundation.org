@@ -48,7 +48,7 @@ const CampaignCards = () => {
                 <Dialog>
                   <DialogTrigger asChild>
                     <p className=" mt-5 cursor-pointer hover:underline hover:text-green-700 hover:scale-110 transition-all duration-300 ease-in text-center">
-                      Read More
+                      আরো পড়ুন
                     </p>
                   </DialogTrigger>
                   <DialogContent className=" overflow-y-scroll h-[90vh]">

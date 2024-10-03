@@ -11,7 +11,7 @@ const Team = () => {
   return (
     <div>
       <h1 className=" text-center uppercase font-semibold text-slate-500 pt-10">
-        Our Team Members
+      আমাদের কার্যনির্বাহী পরিষদ
       </h1>
       <hr className=" h-1 mt-3" />
       {/* <Image src={foundationLogo} alt="..." /> */}
@@ -20,7 +20,7 @@ const Team = () => {
           <MemberInfo {...teamMembersData[0]} />
           <Link href={paths.information.otherMembers} className=" flex items-center justify-center my-3">
             <Button variant={"outline"} className=" w-fit text-green-500 ring-1 ">
-              Other Members
+              অন্যান্য সদস্যরা
             </Button>
           </Link>
         </div>
