@@ -1,0 +1,38 @@
+export const paths = {
+  home: "/",
+  auth: {
+    signin: "/auth/signin",
+    signup: "/auth/signup",
+  },
+  information: {
+    introduction: "/about#Introduction",
+    nature_of_the_organization: "/about#Nature of the organization",
+    arena_limits: "/about#Arena limits",
+    aims_and_objectives: "/about#Aims and Objectives",
+    slogan: "/about#Slogan",
+    vision: "/about#Vision",
+    structure: "/structure",
+    team: "/team",
+    otherMembers: "/team/otherMembers",
+    faq: "/faq", 
+  },
+  activity: "/activity",
+  activites: {
+    human_needs: "/activity/Human needs (Food, Housing, Clothing)",
+    education: "/activity/Education",
+    health: "/activity/Health",
+    training: "/activity/Training",
+    the_culture: "/activity/The Culture",
+    awareness: "/activity/Awareness",
+  },
+  campaign: "/campaign",
+  news: "/news",
+  registration: {
+    volunteer: "/contact",
+    ordinary_member: "/contact",
+    lifetime_member: "/contact",
+    donor_member: "/contact",
+  },
+  donate: "/contact",
+  contact: "/contact",
+};
