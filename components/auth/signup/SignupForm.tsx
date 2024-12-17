@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 
@@ -12,7 +12,7 @@ const SignupForm = () => {
         <input
           name="name"
           type="text"
-          placeholder="ইউজার"
+          placeholder="ব্যবহারকারীর নাম"
           className={inputClassName}
         />
         <input
